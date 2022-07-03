@@ -1,5 +1,4 @@
 <template>
-  
     <div class="container main">
       <!-- 슬라이드 -->
       <div class="visual">
@@ -14,7 +13,7 @@
                 <button class="btn-more" data-anchor="brand">더 알아보기<i class="ico-arr-right"></i></button>
               </div>
               <figure class="visual-bg">
-                <img class="animation-slide-up" src="../../../resources/web/images/main/img_visual_01.png" alt="images">
+                <img class="animation-slide-up" src="@/static/images/main/img_visual_01.png" alt="images">
               </figure>
             </section>
             <section class="swiper-slide">
@@ -25,7 +24,7 @@
                 <button class="btn-more" data-anchor="brand">더 알아보기<i class="ico-arr-right"></i></button>
               </div>
               <figure class="visual-bg">
-                <img class="animation-slide-right" src="../../../resources/web/images/main/img_visual_02.png" alt="images">
+                <img class="animation-slide-right" src="@/static/images/main/img_visual_02.png" alt="images">
               </figure>
             </section>
             <section class="swiper-slide">
@@ -36,7 +35,7 @@
                 <button class="btn-more" data-anchor="brand">더 알아보기<i class="ico-arr-right"></i></button>
               </div>
               <figure class="visual-bg">
-                <img class="animation-zoom-out" src="../../../resources/web/images/main/img_visual_03.png" alt="images">
+                <img class="animation-zoom-out" src="@/static/images/main/img_visual_03.png" alt="images">
               </figure>
             </section>
             <section class="swiper-slide">
@@ -47,7 +46,7 @@
                 <button class="btn-more" data-anchor="brand">더 알아보기<i class="ico-arr-right"></i></button>
               </div>
               <figure class="visual-bg">
-                <img class="animation-slide-up" src="../../../resources/web/images/main/img_visual_01.png" alt="images">
+                <img class="animation-slide-up" src="@/static/images/main/img_visual_01.png" alt="images">
               </figure>
             </section>
             <section class="swiper-slide">
@@ -58,7 +57,7 @@
                 <button class="btn-more" data-anchor="brand">더 알아보기<i class="ico-arr-right"></i></button>
               </div>
               <figure class="visual-bg">
-                <img class="animation-slide-right" src="../../../resources/web/images/main/img_visual_02.png" alt="images">
+                <img class="animation-slide-right" src="@/static/images/main/img_visual_02.png" alt="images">
               </figure>
             </section>
             <section class="swiper-slide">
@@ -69,7 +68,7 @@
                 <button class="btn-more" data-anchor="brand">더 알아보기<i class="ico-arr-right"></i></button>
               </div>
               <figure class="visual-bg">
-                <img class="animation-zoom-out" src="../../../resources/web/images/main/img_visual_03.png" alt="images">
+                <img class="animation-zoom-out" src="@/static/images/main/img_visual_03.png" alt="images">
               </figure>
             </section>
           </div>
@@ -84,7 +83,7 @@
                   <h2 class="thumb-tit">보이지 않기에 <br>비로소 드러나는 가치</h2>
                 </div>
                 <figure class="thumb-bg">
-                  <img class="" src="../../../resources/web/images/main/img_thumb_02.png" alt="images">
+                  <img class="" src="@/static/images/main/img_thumb_02.png" alt="images">
                 </figure>
               </section>
               <section class="swiper-slide">
@@ -93,7 +92,7 @@
                   <h2 class="thumb-tit">노하우와 정성으로 <br>형성된 탁월한 안목</h2>
                 </div>
                 <figure class="thumb-bg">
-                  <img class="" src="../../../resources/web/images/main/img_thumb_03.png" alt="images">
+                  <img class="" src="@/static/images/main/img_thumb_03.png" alt="images">
                 </figure>
               </section>
               <section class="swiper-slide">
@@ -102,7 +101,7 @@
                   <h2 class="thumb-tit">드러내지 않는<br> 보여주지 않는</h2>
                 </div>
                 <figure class="thumb-bg">
-                  <img class="" src="../../../resources/web/images/main/img_thumb_01.png" alt="images">
+                  <img class="" src="@/static/images/main/img_thumb_01.png" alt="images">
                 </figure>
               </section>
               <section class="swiper-slide">
@@ -111,7 +110,7 @@
                   <h2 class="thumb-tit">보이지 않기에 <br>비로소 드러나는 가치</h2>
                 </div>
                 <figure class="thumb-bg">
-                  <img class="" src="../../../resources/web/images/main/img_thumb_02.png" alt="images">
+                  <img class="" src="@/static/images/main/img_thumb_02.png" alt="images">
                 </figure>
               </section>
               <section class="swiper-slide">
@@ -120,7 +119,7 @@
                   <h2 class="thumb-tit">노하우와 정성으로 <br>형성된 탁월한 안목</h2>
                 </div>
                 <figure class="thumb-bg">
-                  <img class="" src="../../../resources/web/images/main/img_thumb_03.png" alt="images">
+                  <img class="" src="@/static/images/main/img_thumb_03.png" alt="images">
                 </figure>
               </section>
               <section class="swiper-slide">
@@ -129,7 +128,7 @@
                   <h2 class="thumb-tit">드러내지 않는<br> 보여주지 않는</h2>
                 </div>
                 <figure class="thumb-bg">
-                  <img class="" src="../../../resources/web/images/main/img_thumb_01.png" alt="images">
+                  <img class="" src="@/static/images/main/img_thumb_01.png" alt="images">
                 </figure>
               </section>
             </div>
@@ -151,10 +150,10 @@
         </section>
         <div class="swiper-container brand-swiper">
           <div class="swiper-wrapper">
-            <img class="swiper-slide" src="../../../resources/web/images/main/img_brand_01.png" alt="image">
-            <img class="swiper-slide" src="../../../resources/web/images/main/img_brand_02.png" alt="image">
-            <img class="swiper-slide" src="../../../resources/web/images/main/img_brand_03.png" alt="image">
-            <img class="swiper-slide" src="../../../resources/web/images/main/img_brand_04.png" alt="image">
+            <img class="swiper-slide" src="@/static/images/main/img_brand_01.png" alt="image">
+            <img class="swiper-slide" src="@/static/images/main/img_brand_02.png" alt="image">
+            <img class="swiper-slide" src="@/static/images/main/img_brand_03.png" alt="image">
+            <img class="swiper-slide" src="@/static/images/main/img_brand_04.png" alt="image">
           </div>
         </div>
         <div class="brand-link-wrap">

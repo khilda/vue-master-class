@@ -2,23 +2,6 @@
 /* ----------------------------------------------------------
 	# Font face
 ---------------------------------------------------------- */
-@mixin fontFace($name, $file, $weight: normal, $style: normal){
-  @font-face {
-    font-family: "#{$name}";
-    src: url('../fonts/#{$file}.eot');
-    src: url('../fonts/#{$file}.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/#{$file}.woff') format('woff'),
-         url('../fonts/#{$file}.ttf') format('truetype');
-    font-weight: $weight;
-    font-style: $style;
-  }
-}
-@include fontFace("NotoSansKR", "NotoSans-Thin", 100);
-@include fontFace("NotoSansKR", "NotoSans-Light", 300);
-@include fontFace("NotoSansKR", "NotoSans-Regular", 400);
-@include fontFace("NotoSansKR", "NotoSans-Medium", 600);
-@include fontFace("NotoSansKR", "NotoSans-Bold", 800);
-// @include fontFace("NotoSansKR", "NotoSans-Black", 900);
 
 /* ----------------------------------------------------------
 	# publish guide 2019

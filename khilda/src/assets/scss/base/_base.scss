@@ -1,4 +1,3 @@
-@import "../helpers/variables";
 /* ----------------------------------------------------------
 # 타이포 관련 공통 스타일 재지정
 ---------------------------------------------------------- */
@@ -27,7 +26,7 @@ b, u, i, center,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary{
-  letter-spacing: $letter-spacing-48; // 0.48px
+  letter-spacing: $letter-spacing-48;
 }
 a{
   color: $grey-33;
