@@ -1,0 +1,53 @@
+/******************************************
+# 가이드 페이지에서만 사용되는 스타일입니다.
+******************************************/
+@import url("../css/mobile_ko.css");
+@import "mixin";
+
+@mixin mq($w: 700px){
+  @media (max-width: $w){
+    @content;
+  }
+}
+.guide{
+  &-tit{
+    background: $black;
+    padding: 6.25rem 5rem;
+    font-weight: 300;
+    color: $white;
+    h1{
+      font-size: 4.25rem;
+    }
+    p{
+      font-size: 1.75rem;
+    }
+  }
+  &-content{
+    background-color: $grey-f2;
+    padding: 3.75vw 5vw;
+    h2{
+      margin-bottom: 2.25rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .col{
+      dl{
+        margin: 50px 0;
+        dt{
+          font-size: 1.1875rem;
+          margin-bottom: 10px;
+        }
+        dd{
+          margin: 20px;
+          vertical-align: top;;
+        }
+      }
+    }
+  }
+  .card{
+    width: 307px;
+    .card-img{
+      height: 172px;
+    }
+  }
+}

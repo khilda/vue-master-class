@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>대림 D&I HTML 목록</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<style type="text/css">
+		/* CSS 리셋 설정 */
+		body,
+		html,
+		header,
+		footer,
+		aside,
+		nav,
+		section,
+		article,
+		details,
+		figure,
+		figcaption,
+		menu,
+		command,
+		div,
+		dl,
+		dd,
+		ol,
+		ul,
+		li,
+		form,
+		fieldset,
+		legend,
+		iframe,
+		table,
+		caption,
+		thead,
+		tfoot,
+		tbody,
+		tr,
+		th,
+		td,
+		/* 블럭 요소 */
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		dt,
+		summary,
+		input,
+		textarea,
+		button,
+		select,
+		datalist,
+		img,
+		embed,
+		object,
+		canvas,
+		audio,
+		video,
+		meter,
+		progress,
+		keygen,
+		/* 인라인 블럭 요소 */
+		a,
+		label,
+		output,
+		dialog,
+		/* 인라인 요소 */
+		address,
+		blockquote,
+		/* 텍스트 블럭 요소 */
+		p,
+		pre,
+		/* 텍스트 인라인 블럭 요소 */
+		span,
+		b,
+		strong,
+		i,
+		em,
+		dfn,
+		var,
+		u,
+		ins,
+		s,
+		del,
+		q,
+		mark,
+		small,
+		sub,
+		sup,
+		abbr,
+		bdi,
+		bdo,
+		cite,
+		time,
+		ruby,
+		rp,
+		rt,
+		code,
+		kbd,
+		samp,
+		/* 텍스트 인라인 요소 */
+		acronym,
+		big,
+		frame,
+		frameset,
+		noframes,
+		tt,
+		/* HTML5에서 사용하지 않는 요소 */
+		map,
+		option,
+		hr,
+		* {
+			border: 0;
+			padding: 0;
+			margin: 0;
+			color: inherit;
+			font-family: inherit;
+			font-size: inherit;
+			line-height: inherit;
+			vertical-align: top
+		}
+
+		header,
+		footer,
+		aside,
+		nav,
+		section,
+		article,
+		details,
+		summary,
+		figure,
+		figcaption,
+		menu,
+		command {
+			display: block
+		}
+
+		/* HTML5 블럭 요소 */
+		applet,
+		basefont,
+		center,
+		dir,
+		font,
+		strike {
+			display: none
+		}
+
+		/* XHTML4, HTML5 이후 사용하지 않는 요소 제거 */
+		q,
+		blockquote {
+			quotes: none;
+			content: none
+		}
+
+		li,
+		menu {
+			list-style: none
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			border-spacing: 0;
+			table-layout: fixed
+		}
+
+		/* 테이블 보더 변경 (겹칩지 않음 separate) */
+		caption {
+			text-align: left
+		}
+
+		th,
+		td {
+			text-align: left;
+			vertical-align: middle;
+		}
+
+		address {
+			font-style: normal
+		}
+
+		label {
+			display: inline-block;
+			*zoom: 1
+		}
+
+		a {
+			text-decoration: none;
+			display: inline-block;
+			*zoom: 1
+		}
+
+		/* 접근성 포커싱을 위해 a요소 속성 변경 */
+		a:hover {
+			text-decoration: underline;
+			color: #1979CA
+		}
+
+		/* 가로스크롤 시 배경이 잘리는 버그를 없애기 위해 최소사이즈 지정 */
+		body {
+			color: #333;
+			font: normal 12px/1 "Nanum Gothic", Sans-Serif
+		}
+
+		/* 기본 폰트 지정 */
+		.blind {
+			position: absolute;
+			width: 0;
+			height: 0;
+			left: 0;
+			top: 0;
+			font-size: 0;
+			line-height: 0;
+			overflow: hidden
+		}
+
+		.hidden {
+			width: 0;
+			height: 0;
+			font-size: 0;
+			line-height: 0;
+			overflow: hidden;
+			visibility: hidden
+		}
+
+		/* .blind를 적용할 수 없는 곳에 사용 (예, caption) */
+		/* 내용 */
+		#wrap {
+			padding: 0 10px;
+			margin: 0 auto
+		}
+
+		#header h1 {
+			padding: 20px 0;
+			text-align: center;
+			font-size: 1.875rem;
+		}
+
+		#header h1 strong {
+			color: #0058EF;
+		}
+
+		#header .nav {
+			border-width: 3px 0;
+			border-style: solid;
+			border-color: #222;
+			overflow: hidden
+		}
+
+		#header .nav li {
+			float: left;
+			width: 50%;
+		}
+
+		#header .nav li.dev {
+			float: left;
+			width: 100%;
+			background: #222;
+			color: #fff;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			display: block;
+			font-size: 1rem;
+			font-weight: bold;
+		}
+
+		#header .nav li a {
+			height: 50px;
+			color: #333;
+			font-size: 1rem;
+			font-weight: bold;
+			text-align: center;
+			line-height: 50px;
+			display: block
+		}
+
+		#header .nav li.on a {
+			color: #fff;
+			background: #222
+		}
+
+		.list_table {
+			margin: 40px 0;
+			line-height: 1.3
+		}
+
+		.list_table tr.line td {
+			border-top: 2px solid #000
+		}
+
+		.list_table th {
+			padding: 10px 0;
+			border: 1px solid #e5e5e5;
+			text-align: center;
+		}
+
+		.list_table th[scope="col"] {
+			background: #f7f7f7;
+		}
+
+		.list_table th[scope="row"] {
+			color: #4c4c4c;
+			font-weight: normal;
+		}
+
+		.list_table td {
+			height: 15px;
+			padding: 5px 5px;
+			border: 1px solid #e5e5e5;
+			color: #4c4c4c;
+			word-break: break-word
+		}
+
+		.list_table td.t_left {
+			padding-left: 10px;
+			text-align: left
+		}
+
+		.list_table td img {
+			vertical-align: middle
+		}
+
+		.list_table td a {
+			font-size: 0.6875rem;
+		}
+
+		.list_table td a span {
+			height: 24px;
+			padding: 0 8px;
+			color: #fff;
+			line-height: 24px;
+			display: block
+		}
+
+		.list_table td span.date {
+			background-color: #4f4f4f
+		}
+
+		.list_table td span.jpg {
+			background-color: #ff8a23
+		}
+
+		.list_table td span.kwah {
+			background-color: #6f9fd1
+		}
+
+		.list_table td.line {
+			background: #dddddd;
+			height: 1px;
+			padding: 0;
+		}
+
+		.today {
+			background: #fcead7;
+			font-weight: bold
+		}
+
+		.t_center {
+			text-align: center;
+		}
+
+		.remark {
+			float: right;
+		}
+
+		.remark span {
+			margin-left: 10px;
+		}
+
+		.remark span:before {
+			content: "-"
+		}
+
+		.txt_fin {
+			color: #0058EF !important;
+		}
+
+		.txt_ing {
+			color: #EF3100 !important;
+		}
+
+		.txt_add {
+			color: #00BE19 !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1>대림 D&I <strong>HTML</strong> LIST</h1>
+    </div>
+		<table class="list_table" summary="대림 D&I HTML LIST 입니다.">
+			<caption class="hidden">대림 D&I HTML LIST</caption>
+			<colgroup>
+				<col style="width:25%" />
+				<col style="width:25%" />
+				<col style="width:35%" />
+				<col style="width:auto" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">Langauge</th>
+					<th scope="col">Device</th>
+          <th scope="col">link</th>
+          <th scope="col">etc</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- 구분선 ================================================================================ -->
+				<tr>
+					<td rowspan="2">KO</td>
+					<td>Mobile</td>
+					<td><a href="./ko/html/mobile/index.html" target="_blank">LINK</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>PC</td>
+					<td>
+            <a href="./ko/html/web/index.html" target="_blank">LINK</a>
+          </td>
+					<td></td>
+				</tr>
+				<!-- 구분선 ================================================================================ -->
+				<tr>
+					<td rowspan="2">EN</td>
+					<td>Mobile</td>
+					<td>
+            <a href="./en/html/mobile/index.html" target="_blank">LINK</a>
+          </td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>PC</td>
+					<td>
+            <a href="./en/html/web/index.html" target="_blank">LINK</a>
+          </td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+</body>
+
+</html>

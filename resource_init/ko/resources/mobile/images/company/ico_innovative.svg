@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" viewBox="0 0 22 32">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#fff;stroke:#333}.prefix__cls-3{stroke:none}.prefix__cls-5{fill:none}
+        </style>
+    </defs>
+    <g id="prefix__ic_innovative">
+        <g id="prefix__합치기_4" fill="#fff" data-name="합치기 4">
+            <path d="M-1570 558h-10V550.679l-.454-.296c-2.847-1.856-4.546-4.99-4.546-8.383 0-5.514 4.486-10 10-10s10 4.486 10 10c0 3.393-1.7 6.527-4.546 8.383l-.454.296V558z" class="prefix__cls-3" transform="translate(1586 -531)"/>
+            <path fill="#333" d="M-1571 557v-6.863l.908-.592c2.562-1.67 4.092-4.491 4.092-7.545 0-4.963-4.037-9-9-9s-9 4.037-9 9c0 3.054 1.53 5.874 4.092 7.545l.908.592V557h8m2 2h-12v-7.78c-3.01-1.962-5-5.359-5-9.22 0-6.075 4.925-11 11-11s11 4.925 11 11c0 3.861-1.99 7.258-5 9.22V559z" transform="translate(1586 -531)"/>
+        </g>
+        <g id="prefix__사각형_716" class="prefix__cls-2" data-name="사각형 716">
+            <path d="M0 0H12V2H0z" class="prefix__cls-3" transform="translate(5 30)"/>
+            <path d="M0.5 0.5H11.5V1.5H0.5z" class="prefix__cls-5" transform="translate(5 30)"/>
+        </g>
+        <g id="prefix__사각형_717" class="prefix__cls-2" data-name="사각형 717">
+            <path d="M0 0H2V14H0z" class="prefix__cls-3" transform="translate(10 14)"/>
+            <path d="M0.5 0.5H1.5V13.5H0.5z" class="prefix__cls-5" transform="translate(10 14)"/>
+        </g>
+    </g>
+</svg>

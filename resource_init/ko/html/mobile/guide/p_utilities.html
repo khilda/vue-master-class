@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Component :: 대림 D&I</title>
+  <link rel="stylesheet" href="../../../resources/mobile/css/guide.css">
+</head>
+<body>
+  <main class="container guide">
+    <div class="guide-tit">
+      <h1>DAELIM D&I : Design Style Guide</h1>
+      <p>대림 디앤아이 디자인 스타일 가이드</p>
+    </div>
+    <section class="guide-content">
+      <h2>Typograpy</h2>
+      <div class="col">
+        <dl>
+          <dt>Korean</dt>
+          <dd style="font-weight: 600;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</dd>
+          <dd style="font-weight: 400;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</dd>
+          <dd style="font-weight: 300;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</dd>
+          <dd style="font-weight: 100;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</dd>
+        </dl>
+        <dl>
+          <dt>English</dt>
+          <dd style="font-weight: 800;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</dd>
+          <dd style="font-weight: 600;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</dd>
+          <dd style="font-weight: 400;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</dd>
+        </dl>
+      </div>
+    </section>
+    <section class="guide-content">
+      <h2>Component</h2>
+      <div class="col">
+        <dl>
+          <dt>Color : Variables Name</dt>
+          <dd> 
+            <span style="display: inline-block;width:100px;height:100px;padding: 35px 0;background-color: #000000; text-align: center; vertical-align: middle; color: #ffffff;">$black</span>
+            <span style="display: inline-block;width:100px;height:100px;padding: 35px 0;background-color: #333333; text-align: center; vertical-align: middle;">$grey-33</span>
+            <span style="display: inline-block;width:100px;height:100px;padding: 35px 0;background-color: #666666; text-align: center; vertical-align: middle;">$grey-66</span>
+            <span style="display: inline-block;width:100px;height:100px;padding: 35px 0;background-color: #f0f0f0; text-align: center; vertical-align: middle;">$grey-f0</span>
+            <span style="display: inline-block;width:100px;height:100px;padding: 35px 0;background-color: #ffffff; text-align: center; vertical-align: middle; border: 1px solid #f0f0f0">$white</span>
+          </dd>
+          <dd> 
+            <span style="display: inline-block;width:100px;height:100px;padding: 20px 0;background-color: #B6BCC8; text-align: center; vertical-align: middle;">$color-primary</span>
+            <span style="display: inline-block;width:100px;height:100px;padding: 20px 0;background-color: #f0f6ff; text-align: center; vertical-align: middle;">$color-primary-light</span>
+            <span style="display: inline-block;width:100px;height:100px;padding: 20px 0;background-color: #e9ecef; text-align: center; vertical-align: middle;">$color-primary-grey</span>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Icon</dt>
+          <dd>
+            <i class="ico-cancle"></i>
+          </dd>
+          <dd> 
+            <i class="ico-arr-top"></i>
+            <i class="ico-arr-bottom"></i>
+            <i class="ico-arr-left"></i>
+            <i class="ico-arr-right"></i>
+          </dd>
+          <dd> 
+            <i class="ico-triangle-top"></i>
+            <i class="ico-triangle-bottom"></i>
+            <i class="ico-triangle-left"></i>
+            <i class="ico-triangle-right"></i>
+          </dd>
+          <dd>
+            <i class="ico-filter"></i>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Button</dt>
+          <dd> 
+            <button class="btn">기본버튼</button> 
+            <button class="btn-list-prev">이전<i class="ico-arr-top"></i></button>
+            <button class="btn-list-next">다음<i class="ico-arr-bottom"></i></button>
+          </dd>
+          <dd>
+            <button class="pop-close">Close</button>
+            <button class="btn-more">더 알아보기<i class="ico-arr-right"></i></button>
+            <a href="#none" class="brand-link">더 보기<i class="ico-triangle-right"></i></a>
+          </dd>
+          <dd>
+            <div class="btn-group">
+              <button class="btn">목록</button>
+              <button class="btn">공유</button>
+            </div>
+          </dd>
+          <dd>
+            <button class="btn-list-more">더 보기<i class="ico-arr-bottom"></i></button>
+          </dd>
+          <dd>
+            <button class="btn-list-more">VIEW DETAIL<i class="ico-arr-bottom"></i></button>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Form</dt>
+          <dd> 
+            <input type="text" placeholder="성명" />
+          </dd>
+          <dd> 
+            <select name="slct01">
+              <option value="default">default</option>
+            </select>
+          </dd>
+          <dd>
+            <figure class="form-chk">
+              <input type="checkbox" id="chk00" />
+              <label for="chk00">checkbox-label</label>
+            </figure>
+          </dd>
+          <dd>
+            <div class="form-group">
+              <label for="file" class="form-group-tit">파일 첨부</label>
+              <figure class="form-file">
+                <input type="text" id="file" disabled/>
+                <label for="fileIp" class="btn">찾아보기</label>
+                <input type="file" id="fileIp" />
+              </figure>
+              <span class="file-txt">파일 용량은 최대 5MB를 초과할 수 없습니다. (doc, docx, pdf, jpg, jpeg, mp4)</span>
+            </div> 
+            <figure class="form-group">
+              <label for="email" class="form-group-tit req">이메일</label>
+              <figure class="form-inline">
+                <input type="text" id="email" placeholder="example" /><em>@</em>
+                <div class="slct-txt">
+                  <select name="slct01">
+                    <option selected hidden>이메일 선택</option>
+                    <option value="write">직접입력</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="daum.net">daum.net</option>
+                  </select>
+                  <input type="email" name="slctDirect" id="slctDirect">
+                </div>
+              </figure>
+              <span class="form-group-txt">특수문자는 입력이 불가능합니다.</span>
+            </figure>
+          </dd>
+          <dd>
+            <textarea cols="30" rows="1"></textarea>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Tab</dt>
+          <dd> 
+            <figure class="tab">
+              <header class="tab-header">
+                <div class="tab-title">
+                  <button class="item is-active">TAB title text long type</button>
+                  <button class="item">TAB02</button>
+                  <button class="item">TAB03</button>
+                  <span class="tab-indicator"></span>
+                </div>
+              </header>
+              <ul class="tab-content">
+                <li class="content is-active">TAB01</li>
+                <li class="content">TAB02</li>
+                <li class="content">TAB03</li>
+              </ul>
+            </figure>
+          </dd>
+        </dl>
+      </div>
+      <div class="col">
+        <dl>
+          <dt>Card</dt>
+          <dd style="display: inline-block;"> 
+            <figure class="card">
+              <div class="card-img">
+                <img src="http://via.placeholder.com/1200x2400" alt="images">
+              </div>
+              <div class="card-content">
+                <h3 class="card-tit">Card Default</h3>
+                <p class="card-txt">집을 어떠한 형태, 어떠한 스타일이든 근본적으로 모든 것들이 충족되어야 합니다. 과장된 표현을 배제하고 솔직 담백한 집을 만들고자 했습니다.</p>
+              </div>
+            </figure>
+          </dd>
+          <dd style="display: inline-block;"> 
+            <a href="#post" class="card list">
+              <div class="card-img">
+                <img src="http://via.placeholder.com/1200x2400" alt="images">
+              </div>
+              <div class="card-content">
+                <h3 class="card-tit">Card list - 2줄 이상 말줄임표</h3>
+                <p class="card-txt">집을 어떠한 형태, 어떠한 스타일이든 근본적으로 모든 것들이 충족되어야 합니다. 과장된 표현을 배제하고 솔직 담백한 집을 만들고자 했습니다.</p>
+              </div>
+            </a>
+          </dd>
+          <dd style="display: inline-block;"> 
+            <a href="#post" class="card list" data-category="dni">
+              <div class="card-img"> </div>
+              <div class="card-content">
+                <span class="badge">Daelim D&I</span>
+                <h3 class="card-tit">대림D&I - 이미지가 없는 경우</h3>
+                <p class="card-txt">집을 어떠한 형태, 어떠한 스타일이든 근본적으로 모든 것들이 충족되어야 합니다. 과장된 표현을 배제하고 솔직 담백한 집을 만들고자 했습니다.</p>
+                <p class="info">
+                  <span class="info-category">브랜드 소식</span>
+                  <span class="info-date">2020.06.20</span>
+                </p>
+              </div>
+            </a>
+          </dd>
+          <dd style="display: inline-block;"> 
+            <a href="#post" class="card list" data-category="haus">
+              <div class="card-img"> </div>
+              <div class="card-content">
+                <span class="badge">LUCID HAUS</span>
+                <h3 class="card-tit">LUCID HAUS - 이미지가 없는 경우</h3>
+                <p class="card-txt">집을 어떠한 형태, 어떠한 스타일이든 근본적으로 모든 것들이 충족되어야 합니다. 과장된 표현을 배제하고 솔직 담백한 집을 만들고자 했습니다.</p>
+                <p class="info">
+                  <span class="info-category">브랜드 소식</span>
+                  <span class="info-date">2020.06.20</span>
+                </p>
+              </div>
+            </a>
+          </dd>
+          <dd style="display: inline-block;"> 
+            <a href="#post" class="card list" data-category="avenue">
+              <div class="card-img"> </div>
+              <div class="card-content">
+                <span class="badge">LUCID AVENUE</span>
+                <h3 class="card-tit">LUCID AVENUE - 이미지가 없는 경우</h3>
+                <p class="card-txt">집을 어떠한 형태, 어떠한 스타일이든 근본적으로 모든 것들이 충족되어야 합니다. 과장된 표현을 배제하고 솔직 담백한 집을 만들고자 했습니다.</p>
+                <p class="info">
+                  <span class="info-category">브랜드 소식</span>
+                  <span class="info-date">2020.06.20</span>
+                </p>
+              </div>
+            </a>
+          </dd>
+        </dl>
+      </div>  
+      <div class="col">
+        <dl>
+          <dt>Popup : Alert은 시스템 팝업으로 처리</dt>
+          <dd> 
+            <button class="btn" data-popup="popPrivacy">기본 팝업 : 개인정보처리방침</button> 
+          </dd>
+          <dd> 
+            <button class="btn" data-popup="popGallery">이미지 팝업</button> 
+          </dd>
+          <dd> 
+            <button class="btn" data-popup="popFilter">필터</button> 
+          </dd>
+          <dd> 
+            <button class="btn" data-popup="popShare">공유하기</button> 
+          </dd>
+          <dd> 
+            <button class="btn" data-toast="toastCopy">텍스트 복사</button> 
+          </dd>
+          <dd> 
+            <button class="btn" data-alert="alertName">form 이름 미입력</button> 
+          </dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+  <!-- ########################### popup : 갤러리 ############################### -->
+  <figure class="popup p-gallery" id="popGallery">
+    <header class="popup-header">
+      <h1 class="tit">이미지 갤러리</h1>
+      <button class="pop-close">Close</button>
+    </header>
+    <div class="p-gallery-content">
+      <!-- Swiper -->
+      <figure class="swiper-container p-gallery-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"> <img src="../../../resources/mobile/images/brand/img_haus_gallery_01.png" alt="images"> </div>
+          <div class="swiper-slide"> <img src="../../../resources/mobile/images/brand/img_haus_gallery_02.png" alt="images"> </div>
+          <div class="swiper-slide"> <img src="../../../resources/mobile/images/brand/img_haus_gallery_03.png" alt="images"> </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </figure>
+    </div>
+  </figure>
+  <!-- ########################### popup : 필터설정 ############################### -->
+  <figure class="popup draw filter" id="popFilter">
+    <header class="popup-header">
+      <h1 class="tit">필터 설정</h1>
+      <button class="pop-close">Close</button>
+    </header>
+    <section class="popup-content">
+      <h2 class="filter-tit">카테고리</h2>
+      <div class="filter-set">
+        <div class="item">
+          <input type="radio" id="categoryAll" value="all" name="category" checked />
+          <label for="categoryAll">전체</label>
+        </div>
+        <div class="item">
+          <input type="radio" id="notice" value="notice" name="category" />
+          <label for="notice">공지사항</label>
+        </div>
+        <div class="item">
+          <input type="radio" id="news" value="news" name="category"  />
+          <label for="news">뉴스</label>
+        </div>
+        <div class="item">
+          <input type="radio" id="brand" value="brand" name="category" />
+          <label for="brand">브랜드 소식</label>
+        </div>
+      </div>
+      <h2 class="filter-tit">정렬방식</h2>
+      <div class="filter-set">
+        <div class="item">
+          <input type="radio" id="fastest" value="fastest" name="align" checked />
+          <label for="fastest">최신순</label>
+        </div>
+        <div class="item">
+          <input type="radio" id="popular" value="popular" name="align" />
+          <label for="popular">인기순</label>
+        </div>
+      </div>
+      <h2 class="filter-tit">브랜드</h2>
+      <div class="filter-set">
+        <div class="item">
+          <input type="radio" id="brandAll" value="all" name="brands" checked />
+          <label for="brandAll">전체</label>
+        </div>
+        <div class="item">
+          <input type="radio" id="dni" value="dni" name="brands" />
+          <label for="dni">Daelim D&I</label>
+        </div>
+        <div class="item">
+          <input type="radio" id="haus" value="haus" name="brands"  />
+          <label for="haus">LUCID HAUS</label>
+        </div>
+        <div class="item">
+          <input type="radio" id="avenue" value="avenue" name="brands" />
+          <label for="avenue">LUCID AVENUE</label>
+        </div>
+      </div>
+    </section>
+    <footer class="popup-footer">
+      <div class="btn-group">
+        <button id="reset" class="btn">초기화</button>
+        <button id="apply" class="btn">적용하기</button>
+      </div>
+    </footer>
+  </figure>
+  <!-- ######################## popup : 공유하기 ############################# -->
+  <figure class="popup draw share" id="popShare">    
+    <header class="popup-header">
+      <h1 class="tit">공유하기</h1>
+      <button class="pop-close">Close</button>
+    </header>
+    <div class="popup-content">
+      <a class="share-link" href="#kakao" data-share="kakao">카카오톡</a>
+      <a class="share-link" href="#kakaoStory" data-share="kakaoStory">카카오 스토리</a>
+      <a class="share-link" href="#blog" data-share="blog">네이버 블로그</a>
+      <a class="share-link" href="#facebook" data-share="facebook">페이스북</a>
+      <button class="share-link" data-share="url">URL 복사</button>
+    </div>
+  </figure>
+  <!-- ######################## toast : 텍스트 복사 ############################# -->
+  <figure class="toast copy" id="toastCopy">
+    <p class="txt">주소가 복사되었습니다.</p>
+  </figure>
+  <!-- ################################# SCRIPT ################################# -->
+  <script src="../../../resources/mobile/js/lib/jquery-3.4.1.min.js"></script>
+  <script src="../../../resources/mobile/js/lib/swiper.min.js"></script>
+  <script src="../../../resources/mobile/js/common.js"></script>
+  <script>
+    // 퍼블 페이지를 위한 스크립트이며, 개발 시 삭제부탁드립니다.
+    var popGallery = new Swiper('.p-gallery-swiper', galleryParams);
+    slctWithTxt();
+    swiperGallery();
+    $('[data-share="url"]').on('click', function(){
+      toastOpen('toastCopy')
+    })
+    $('[data-alert="alertName"').on('click', function(){
+      alert(alertMsg('confirm'))
+    })
+    function alertMsg(target = confirm){
+      var msg = {
+        name : '성명이 입력되지 않았습니다. \n다시 한번 확인해 주세요',
+        email : '이메일이 입력되지 않았습니다. \n다시 한번 확인해 주세요',
+        inquiry : '문의 내용이 입력되지 않았습니다. \n다시 한번 확인해 주세요',
+        privacy : '[개인정보 수집 및 이용]에 동의한 후 \n이용하실 수 있습니다.',
+        confirm : '문의 내용이 정상적으로 발송되었습니다. \n감사합니다.'
+      }
+      return msg[target] || undefined;
+    }
+  </script>
+</body>
+</html>

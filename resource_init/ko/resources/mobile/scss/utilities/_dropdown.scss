@@ -1,0 +1,56 @@
+// 사용안함 : 임시스타일
+.dropdown{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &-btn{
+    border: 1px solid;
+    height: 35px;
+    padding: 5px 20px 5px 12px;
+    text-align: left;
+    &:before,
+    &:after{
+      content:'';
+      position: absolute;
+      top: 17px;
+      right: 12px;
+      background: #000;
+      display: block;
+      width: 8px;
+      height: 1px;
+      transition: .3s;
+    }
+    &:before{
+      transform: rotate(45deg);
+      right: 18px;
+    }
+    &:after{
+      transform: rotate(135deg);
+    }
+  }
+  &-list{
+    display: none;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid;
+    border-top: transparent;
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+    z-index: 1;
+    .item{
+      display: block;
+      width: 100%;
+      padding: 10px 12px;
+      text-align: left;
+    }
+  }
+  &.is-active{
+    .dropdown-btn:before{
+      right: 12px;
+    }
+    .dropdown-btn:after{
+      right: 18px;
+    }
+  }
+}

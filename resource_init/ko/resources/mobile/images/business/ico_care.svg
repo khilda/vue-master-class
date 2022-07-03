@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__사각형_664" fill="red" d="M0 0H32V32H0z" data-name="사각형 664" opacity="0.3" transform="translate(44 1690)"/>
+        </clipPath>
+    </defs>
+    <g id="prefix__ic_care" clip-path="url(#prefix__clip-path)" transform="translate(-44 -1690)">
+        <path id="prefix__ic_care-2" fill="#fff" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" d="M4540.538-6448.637v-11.9a8.7 8.7 0 0 1-5.538-8.012 8.408 8.408 0 0 1 1.972-5.426 9.086 9.086 0 0 1 4.953-3.025v7.782h4.152V-6477a9.088 9.088 0 0 1 4.95 3.025 8.4 8.4 0 0 1 1.973 5.426 8.7 8.7 0 0 1-5.538 8.013v11.9a3.462 3.462 0 0 1-3.461 3.462 3.463 3.463 0 0 1-3.463-3.463z" data-name="ic_care" transform="rotate(45 -7557.134 -7791.681)"/>
+    </g>
+</svg>

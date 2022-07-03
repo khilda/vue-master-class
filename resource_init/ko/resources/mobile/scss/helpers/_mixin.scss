@@ -1,0 +1,185 @@
+//************************************
+//# clearfix
+//************************************
+@mixin clearfix(){
+  &:after{
+    content:'';
+    display: table;
+    clear: both;
+  }
+}
+//************************************
+//# text eillipse
+//************************************
+@mixin eillipse($line: 2){
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical; 
+  text-overflow: ellipsis;
+  overflow: hidden; 
+}
+
+
+//************************************
+//# icon Cancle
+//************************************
+@mixin iconCancel($size: 20px, $thick: 2px, $color: $black, $padding: 0, $display: inline-block, $position: relative) {
+  position: $position;
+  display: $display;
+  width: $size + $padding*2;
+  height: $size + $padding*2;
+  vertical-align: middle;
+  font-size: 0;
+  color: transparent;
+  &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: round($size*$sqrt_2 - $thick);
+      height: $thick;
+      background-color: $color;
+  }
+  &:before {
+      -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &:after {
+      -webkit-transform: translate(-50%, -50%) rotate(135deg);
+      transform: translate(-50%, -50%) rotate(135deg);
+  }
+}
+//************************************
+//# icon Triangle
+//************************************
+@mixin iconTriangle($direction: 'top', $width: 8px, $height: 5px, $color: $black, $display: inline-block) {
+  display: $display;
+  vertical-align: middle;
+  @if ($direction == 'top' or $direction == 'bottom') {
+    width: $width;
+    height: $height;
+    &:before {
+      content: '';
+      display: block;
+      @if ($direction == 'top') {
+        border-bottom: $height solid $color;
+        border-left: round($width/2) solid transparent;
+        border-right: round($width/2) solid transparent;
+      } @else if ($direction == 'bottom') {
+        border-top: $height solid $color;
+        border-left: round($width/2) solid transparent;
+        border-right: round($width/2) solid transparent;
+      }
+    }
+  } @else if ($direction == 'left' or $direction == 'right') {
+    width: $height;
+    height: $width;
+    &:before {
+      content: '';
+      display: block;
+      @if ($direction == 'left') {
+        border-top: round($width/2) solid transparent;
+        border-bottom: round($width/2) solid transparent;
+        border-right: $height solid $color;
+      } @else if ($direction == 'right') {
+        border-top: round($width/2) solid transparent;
+        border-bottom: round($width/2) solid transparent;
+        border-left: $height solid $color;
+      }
+    } 
+  }
+}
+//************************************
+//# icon arrow
+//************************************
+$sqrt_2: 1.41421356237;
+@mixin iconAngle($direction: 'top', $width: 15px, $height: 8px, $thick: 2px, $color: $black, $display: inline-block, $position: relative) {
+    position: $position;
+    display: $display;
+    width: $width;
+    height: $height;
+    vertical-align: middle;
+    @if ($direction == 'top' or $direction == 'bottom') {
+        $size: floor($width/$sqrt_2 - 2*$thick);
+        $rate: 2*$height/$width;
+        $margin-top: round($rate*$size/(2*$sqrt_2));
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: $size;
+            height: $size;
+            @if ($rate == 1) {
+                -webkit-transform: translate(-50%, -50%) rotate(45deg);
+                transform: translate(-50%, -50%) rotate(45deg);
+            } @else {
+                -webkit-transform: translate(-50%, -50%) scale(1, $rate) rotate(45deg);
+                transform: translate(-50%, -50%) scale(1, $rate) rotate(45deg);
+            }
+            @if ($direction == 'top') {
+                margin-top: $margin-top;
+                border-top: $thick solid $color;
+                border-left: $thick solid $color;
+            } @else if ($direction == 'bottom') {
+                margin-top: - $margin-top;
+                border-right: $thick solid $color;
+                border-bottom: $thick solid $color;
+            }
+        }
+    } @else if ($direction == 'left' or $direction == 'right') {
+        $size: floor($width/$sqrt_2 - 2*$thick);
+        $rate: 2*$height/$width;
+        $margin-left: round($rate*$size/(2*$sqrt_2));
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: $size;
+            height: $size;
+            @if ($rate == 1) {
+                -webkit-transform: translate(-50%, -50%) rotate(45deg);
+                transform: translate(-50%, -50%) rotate(45deg);
+            } @else {
+                -webkit-transform: translate(-50%, -50%) scale($rate, 1) rotate(45deg);
+                transform: translate(-50%, -50%) scale($rate, 1) rotate(45deg);
+            }
+            @if ($direction == 'left') {
+                margin-left: $margin-left;
+                border-left: $thick solid $color;
+                border-bottom: $thick solid $color;
+            } @else if ($direction == 'right') {
+                margin-left: - $margin-left;
+                border-top: $thick solid $color;
+                border-right: $thick solid $color;
+            }
+        }
+    }
+}
+
+//************************************
+//# animation
+//************************************
+@mixin animation ($delay, $duration, $animation, $direction: forward, $fillmode: both) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-name: $animation;
+  -webkit-animation-fill-mode: $fillmode;
+  -webkit-animation-direction: $direction;
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-fill-mode: $fillmode;
+  animation-direction: $direction;
+};
+
+@mixin keyframe ($name) {
+  @-webkit-keyframes #{$name} {
+      @content;
+  }
+  @keyframes #{$name} {
+      @content;
+  }
+}

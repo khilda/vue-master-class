@@ -1,0 +1,46 @@
+.wrap{
+  position: relative;
+  background-color: $white;
+  min-width: 1280px;
+  padding-top: 97px;
+}
+.container{
+  position: relative;
+}
+
+.navi{
+  position: relative;
+  width: 1200px;
+  padding: 33px 0 20px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 0;
+  &-depth{
+    @include iconAngle('right', $color: $grey-b1);
+    width: auto;
+    height: auto;
+    padding-left: 12px;
+    margin-left: 6px;
+    font-size: 12px;
+    font-weight: 300;
+    color: $grey-88;
+    letter-spacing: 0em;
+    &:before{
+      left: -6px;
+      margin: 0 6px;
+      border-width: 1px 1px 0 0;
+      cursor: default;
+    }
+    &:first-child{
+      padding:0;
+      margin:0;
+      &::before{
+        content: none;
+      }
+    }
+    &:last-child{
+      font-weight: 400;
+      color: $black;
+    }
+  }
+}

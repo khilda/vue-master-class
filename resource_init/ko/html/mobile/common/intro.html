@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Intro :: 대림 D&I</title>
+  <link rel="stylesheet" href="../../../resources/mobile/css/mobile_ko.css">
+</head>
+<body>
+  <main class="intro">
+    <a href="../common/index.html" class="link-skip">건너뛰기</a>
+    <!-- Swiper -->
+    <figure class="swiper-container intro-swiper">
+      <div class="swiper-wrapper">
+        <section class="swiper-slide">
+          <figure class="intro-bg">
+            <img class="animation-slide-up" src="../../../resources/mobile/images/intro/bg_intro_01.png" alt="images">
+          </figure>
+          <div class="intro-content">
+            <h1 class="intro-tit">드러내지 않는<br> 보여주지 않는</h1>
+            <p class="txt">독창적인 공간을 추구하는 <br>디자인으로 프리미엄을 초월하는<br> 경험을 만듭니다.</p>
+            <button class="btn-more">더 알아보기<i class="ico-arr-right"></i></button>
+          </div>
+        </section>
+        <section class="swiper-slide">
+          <figure class="intro-bg">
+            <img class="animation-slide-right" src="../../../resources/mobile/images/intro/bg_intro_02.png" alt="images">
+          </figure>
+          <div class="intro-content">
+            <h1 class="intro-tit">보이지 않기에 <br>비로소 드러나는 가치</h1>
+            <p class="txt">공간의 의미를 새롭게 <br>발견하고 공유하며 <br>삶의 가치를 더합니다.</p>
+            <button class="btn-more">더 알아보기<i class="ico-arr-right"></i></button>
+          </div>
+        </section>
+        <section class="swiper-slide">
+          <figure class="intro-bg">
+            <img class="animation-zoom-out" src="../../../resources/mobile/images/intro/bg_intro_03.png" alt="images">
+          </figure>
+          <div class="intro-content">
+            <h1 class="intro-tit">노하우와 정성으로 <br>형성된 탁월한 안목</h1>
+            <p class="txt">공간을 작품으로, <br> 고객의 삶은 예술이 되도록<br> 대림D&I가 실현합니다.</p>
+            <a href="../common/index.html" class="btn-more">더 알아보기<i class="ico-arr-right"></i></a>
+          </div>
+        </section>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </figure>
+  </main>
+  <!-- ################################# SCRIPT ################################# -->
+  <script src="../../../resources/mobile/js/lib/jquery-3.4.1.min.js"></script>
+  <script src="../../../resources/mobile/js/lib/swiper.min.js"></script>
+  <script>
+    var intro = new Swiper('.intro-swiper', {
+      effect: 'fade',
+      speed: 1500,
+      grap: true,
+      autoplay: {
+        delay: 13000,
+        stopOnLastSlide: true,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      on: {
+        slideChange: function(){
+          if(intro.activeIndex+1 == intro.slides.length) {
+            $('.link-skip').fadeOut(300);
+          } else{
+            $('.link-skip').removeAttr('style')
+          }
+        }
+      }
+    });
+    $('.intro-swiper button.btn-more').on('click', function(){
+        intro.slideNext();
+    });
+  </script>
+</body>
+</html>

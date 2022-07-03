@@ -1,0 +1,273 @@
+//************************************
+//# 공통 유틸리티
+//************************************
+// page title
+.page-header{
+  margin: 37px $l-margin-44 32px;
+  .page-tit{
+    font-size: 1.875rem;
+    font-weight: 800;
+  }
+  .txt{
+    word-break: keep-all;
+  }
+}
+
+// Brand Utilty
+.brand{
+  &-info{
+    border-bottom: 1px solid $grey-f0;
+  }
+  &-category{
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  &-tit{
+    font-size: 1.625rem;
+  }
+  &-link{
+    display: block;
+    padding: 5px 0;
+    color: $black;
+    .ico-triangle-right{
+      margin:0 0 4px 8px;
+    }
+  }
+}
+
+//Card utility
+.card{
+  position: relative;
+  display: block;
+  background-color: $white;
+  width: $l-width;
+  box-shadow: 0 3px 8px 0 rgba($black, 0.1);
+  &-img{
+    position: relative;
+    display:block;
+    background-color: $grey-f2;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: pxTovw(172);
+    overflow: hidden;
+    img{
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &[data-category="dni"] .card-img{
+    background-image: url('../images/common/img_card_dni.png');
+  }
+  &[data-category="haus"] .card-img{
+    background-image: url('../images/common/img_card_haus.png');
+  }
+  &[data-category="avenue"] .card-img{
+    background-image: url('../images/common/img_card_avenue.png');
+  }
+  &-content{
+    display:block;
+    padding: 16px 22px 20px 20px;
+  }
+  // default style
+  &-tit{
+    letter-spacing: $letter-spacing-48; // 0.48px
+    margin-bottom: 2px;
+    word-break: keep-all;
+  }
+  &-txt{
+    font-size: 0.9375rem;
+    font-weight: 300;
+    color: $grey-33;
+    word-break: keep-all;
+  }
+  .info{
+    margin-bottom: 8px;
+  }
+  // swiper card style
+  &.list{
+    .card-tit{
+      @include eillipse(1);
+    }
+    .card-txt{
+      @include eillipse();
+      height: 43px;
+    }
+  }
+}
+// category | date
+.info{
+  font-weight: 300;
+  font-size: 0;
+  .badge{
+    margin-right: 10px;
+  }
+  &-category{
+    font-size:0.8125rem;
+    color: $grey-66;
+    letter-spacing: 0;
+  }
+  &-date{
+    color: $grey-66;
+    letter-spacing: 0;
+    font-size:0.8125rem;
+    &:before{
+      content:'';
+      display: inline-block;
+      background-color: $grey-99;
+      width: 1px;
+      height: 11px;
+      margin: 0 5px 2px;
+      vertical-align: middle;
+    }
+  }
+}
+// badge
+.badge{
+  display: inline-block;
+  background-color: $black;
+  padding:3px 8px;
+  font-size: 0.8125rem;
+  color: $white;
+  letter-spacing: 0.0163rem;
+}
+
+// graphy-info
+.graphy{
+  position: relative;
+  border-top: 1px solid $grey-f0;
+  padding: 20px 6px 20px 56px;
+  &-tit{
+    margin-bottom: 2px;
+    color: $black
+  }
+  &-txt{
+    font-size: 0.9375rem;
+    font-weight: 300;
+    color : $grey-33;
+  }
+  &>[class^="ico"]{
+    position: absolute;
+    top: 25px;
+    left:10px;
+    width: 29px;
+    height: 29px;
+  }
+}
+// business process
+.process{
+  &-item{
+    position: relative;
+    border-bottom: 1px solid $grey-f0;
+    margin-top: 17px;
+    padding: 3px 15px 20px 56px;
+    &:last-child{
+      border-bottom: 0 none;
+      padding-bottom: 0;
+    }
+  }
+  &-num{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    background-color: #f5f6f6;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    font-style: normal;
+  }
+  &-tit{
+    margin-bottom: 8px;
+    color: $black
+  }
+  &-txt{
+    margin-bottom: 14px;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    color : $grey-33;
+  }
+  &-list{
+    li{
+      margin-bottom: 5px;
+      line-height: 22px;
+      color : $grey-33;
+      font-size: 0.9375rem;
+      font-weight: 300;
+    }
+    &.txt{
+      margin-top: 8px;
+    }
+    &.dot{
+      position: relative;
+      li{
+        position: relative;
+        margin-bottom: 12px;
+        padding-left: 16px;
+        &:before{
+          content:'';
+          position: absolute;
+          top: 5px;
+          left: -5px;
+          background-color: $grey-dd;
+          border-radius: 50%;
+          border: 6px solid $white;
+          width: 6px;
+          height: 6px;
+        }
+      }
+      &::before{
+        content: '';
+        position: absolute;
+        left: 3px;
+        top: 15px;
+        bottom: 15px;
+        background-color:#f5f6f6;
+        width: 2px;
+      }
+    }
+  }
+}
+// introduce
+.introduce{
+  &+.introduce{
+    border-top: 1px solid $grey-f0;
+    padding-top: 26px;
+  }
+  &-tit{
+    margin-bottom: 18px;
+    padding: 0 $l-margin-10;
+    line-height: 1.6875rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  >.txt{
+    margin: 26px pxTovw(7) 26px $l-margin-10;
+    line-height: 1.5625rem;
+  }
+  .card{
+    margin-bottom: 6px;
+    &-tit{
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: $black;
+    }
+  }
+  .graphy:first-of-type{
+    border-top: 0px none;
+  }
+  .list-dot{
+    background-color: #f9faf9;
+    margin-bottom: 20px;
+    padding: 16px 26px 20px 20px;
+    li{
+      margin-bottom: 4px;
+      color: $grey-33;
+      font-size: 0.9375rem;
+    }
+  }
+}

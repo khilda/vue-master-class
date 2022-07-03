@@ -1,0 +1,83 @@
+.lucid{
+  .visual{
+    margin-top: 41px;
+    &-info{
+      margin: 0 $l-margin-44 pxTovw(20);
+    }
+    &-category{
+      font-weight: 400;
+    }
+    &-tit{
+      line-height: 2.0625rem;
+      font-size: 1.625rem;
+      font-weight: 300;
+      margin-top: 5px;
+    }
+    &-link{
+      margin: 15px 0 30px;
+      padding: 0 $l-margin-44;
+      text-align: right;
+    }
+  }
+  .tab{
+    margin-bottom: 36px;
+  }
+  .gallery{
+    position: relative;
+    height: pxTovw(265); // 265px (275기준)
+    margin-bottom: 56px;
+    &:after{
+      content:'';
+      position: absolute;
+      bottom: 0;
+      display: block;
+      background-color: #006cff;
+      width: 100%;
+      height: 64.9056%; // 172px (gallery height 265 기준)
+      opacity: 0.06;
+    }
+    .lucid-tit{
+      margin: 0 $l-margin-44 16px;
+    } 
+    &-swiper{
+      .swiper-slide{
+        position: relative;
+        width: pxTovw(172); // 172px (375기준)
+        height: pxTovw(172); // 172px (375기준)
+        overflow: hidden;
+        img{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 200%;
+        }
+      }
+    }
+
+  }
+  .brand{
+    margin: 0 $l-margin-34;
+    .lucid-tit{
+      padding:0 $l-margin-10;
+    }
+    &-img{
+      margin-bottom: 20px;
+    }
+    &-info{
+      padding:0 $l-margin-10 20px;
+    }
+    &-table{
+      margin: 20px 0 26px;
+    }
+  }
+  // style
+  &-tit{
+    margin-bottom: 16px;
+    font-size: 1.75rem;
+    font-weight: 300;
+  }
+  .card+.card{
+    margin-top: pxTovw(26);
+  }
+}

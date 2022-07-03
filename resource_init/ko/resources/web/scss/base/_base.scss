@@ -1,0 +1,86 @@
+@import "../helpers/variables";
+/* ----------------------------------------------------------
+# 타이포 관련 공통 스타일 재지정
+---------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, main {
+  font-size: 16px;
+}
+ol, ul, dl,
+div, p,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary{
+  letter-spacing: $letter-spacing-48; // 0.48px
+}
+a{
+  color: $grey-33;
+  :visited{
+    color: $grey-33;
+  }
+}
+button{
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+// base paragrphy 
+.txt{
+  font-size: 1rem;
+  font-weight: 300;
+  color: $grey-33;
+}
+ol, ul, dl,
+li, dd{
+  list-style: none;
+}
+
+/* ----------------------------------------------------------
+# 레이아웃 관련 공통 스타일 재지정
+---------------------------------------------------------- */
+html{
+  overflow-y: scroll;
+}
+.not-scroll{
+  overflow: hidden;
+  touch-action: none;
+}
+/* ----------------------------------------------------------
+# 컴포넌트 관련 공통 스타일 재지정
+---------------------------------------------------------- */
+table{
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+// image width 100
+img{
+  display: block;
+  width: 100%;
+}
+//focus
+:focus{
+  outline: 0 none
+}
+.req:after{
+  content: '*';
+  margin-left: 3px;
+  color: $color-accent;
+}

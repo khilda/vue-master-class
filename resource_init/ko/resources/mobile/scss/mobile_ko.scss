@@ -1,0 +1,19 @@
+/******************************************
+#  MOBILE PAGE STYLE - KOR
+#  DATE   : 2020.06.25 
+#  AUTHOR : yujinkim
+#  DEVICE : MOBILE KOR
+******************************************/
+// common layout, utilities, lib
+@import url("../css/lib/swiper.min.css");
+@import url("../css/common.css");
+// variables, mixin
+@import "mixin";
+// page style
+@import "page/intro";
+@import "page/main";
+@import "page/company";
+@import "page/business";
+@import "page/brand";
+@import "page/media";
+@import "page/contactus";

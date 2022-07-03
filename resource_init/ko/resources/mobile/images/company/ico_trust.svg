@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__ic_trust" width="25.143" height="32" viewBox="0 0 25.143 32">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none}.prefix__cls-3,.prefix__cls-4{stroke:none}.prefix__cls-4{fill:#333}
+        </style>
+    </defs>
+    <g id="prefix__패스_181" class="prefix__cls-1" data-name="패스 181">
+        <path d="M40.229-514.673l5.637 7.965 8.85-7.965z" class="prefix__cls-3" transform="translate(-40.229 514.673)"/>
+        <path d="M44.095-512.673l2.105 2.974 3.304-2.974h-5.409m-3.866-2h14.487l-8.85 7.965-5.637-7.965z" class="prefix__cls-4" transform="translate(-40.229 514.673)"/>
+    </g>
+    <g id="prefix__패스_182" class="prefix__cls-1" data-name="패스 182">
+        <path d="M54.716-514.673l-5.637 7.965-8.85-7.965z" class="prefix__cls-3" transform="translate(-29.573 514.673)"/>
+        <path d="M45.441-512.673l3.305 2.974 2.104-2.974h-5.409m-5.212-2h14.487l-5.637 7.965-8.85-7.965z" class="prefix__cls-4" transform="translate(-29.573 514.673)"/>
+    </g>
+    <g id="prefix__패스_183" class="prefix__cls-1" data-name="패스 183">
+        <path d="M153.686-516.7h2.645l3.691 19.439-4.961 4.58-5.029-4.58z" class="prefix__cls-3" transform="translate(-142.635 524.685)"/>
+        <path d="M155.012-512.93l-2.808 14.938 2.848 2.593 2.798-2.583-2.838-14.948m-1.326-3.774h2.645l3.691 19.44-4.96 4.579-5.03-4.58 3.654-19.439z" class="prefix__cls-4" transform="translate(-142.635 524.685)"/>
+    </g>
+    <path id="prefix__패스_184" fill="none" stroke="#333" stroke-width="2px" d="M150.507-520.043l3.555 3.923h1.838l3.7-3.923" data-name="패스 184" transform="translate(-142.571 524.191)"/>
+</svg>

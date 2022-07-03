@@ -1,0 +1,20 @@
+.footer{
+  background: $color-primary-grey;
+  padding: 30px $l-margin-34;
+  margin-top: 86px;
+  .logo{
+    width: 109px;
+  }
+  address{
+    margin: 14px 0;
+    .txt{
+      font-weight: 400;
+      font-size: 0.875rem;
+      color: $color-primary;
+    }
+  }
+  .copyright{
+    font-size: 0.8125rem;
+    color: $color-primary;
+  }
+}

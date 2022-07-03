@@ -1,0 +1,19 @@
+//************************************
+//# Alert
+//************************************
+.toast{
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  left: calc(50% - 170px);
+  background: transparentize($black, .2);
+  border-radius: 5px;
+  width: 340px; 
+  padding: 20px;
+  text-align: center;
+  z-index: 500;
+  .txt{
+    font-weight: 400;
+    color: $white;
+  }
+}

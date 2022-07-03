@@ -1,0 +1,67 @@
+.contactus{
+  .form{
+    margin: 0 $l-margin-34;
+    &-group{
+      margin: 0 $l-margin-10 20px;
+    }
+  }
+  .btn-block{
+    background-color: $black;
+    color: $white;
+    padding: 15px 0;
+    &:disabled{
+      background-color: $grey-dd;
+      color: $white;
+    }
+  }
+  // 개인정보수집이용 아코디언
+  .chk-privacy{
+    border-top: 1px solid $grey-f0;
+    border-bottom: 1px solid $grey-f0;
+    margin: 30px 0;
+    &-tit{
+      position: relative;
+      padding: 20px 0;
+      label{
+        position: relative;
+      }
+      .btn-acc{
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        display: block;
+        width: 55px;
+        text-align: center;
+        .ico-triangle-bottom{
+          transition: transform .3s;
+        }
+      }
+    }
+    &-content{
+      display: none;
+      border-top: 1px solid $grey-f0;
+      background-color: #f9faf9;
+      max-height: 200px;
+      padding: 16px 20px;
+      color: $grey-66;
+      word-break: keep-all;
+      overflow-y: scroll;
+      .privacy-list{
+        margin-bottom: 12px;
+        dt{
+          font-size: 0.9375rem;
+        }
+        dd{
+          font-size: 0.875rem;
+          font-weight: 300;
+        }
+      }
+    }
+    &.is-open{
+      .btn-acc .ico-triangle-bottom{
+        transform: rotate(180deg)
+      }
+    }
+  }
+}

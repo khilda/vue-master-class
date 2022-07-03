@@ -1,0 +1,92 @@
+/******************************************
+# Admin detail
+# DATE   : 2020.07.30
+# AUTHOR : yujinkim
+# DEVICE : Web
+******************************************/
+// reset
+@import "base/reset";
+@import "base/base";
+
+// variables, mixin
+@import "mixin";
+
+// utility
+@import "utilities/content-wrap";
+
+// DETAIL
+.detail{
+  width: 1200px;
+  margin: 0 auto;
+  &-header{
+    margin-bottom: 47px;
+    &-tit{
+      margin: 12px 0;
+      line-height: 52px;
+      font-size: 40px;
+      font-weight: 100;
+      word-break: keep-all;
+      color: $grey-33;
+    }
+    .info-category,
+    .info-date{
+      font-size:15px;
+    }
+  }
+  &-content{
+    .youtube{
+      position: relative;
+      iframe{
+        width: 100%;
+        height: 520px;
+      }
+    }
+    &-editor{
+      padding: 32px 0;
+      font-size: 17px;
+      line-height: 28px;
+      font-weight: 300;
+      color: $grey-33;
+      img{
+        max-width: 100%;
+        width: auto;
+      }
+    }
+  }
+  &-footer{
+    margin: 60px auto 0;
+    .btn.list{
+      margin-top: 60px;
+    }
+    .link-group{
+      margin: 18px 0;
+      border-top: 1px solid $grey-f0;
+      .btn-link{
+        display: flex;
+        border-bottom: 1px solid $grey-f0;
+        padding: 14px 0;
+        .btn-txt{
+          width: 165px;
+          color: $black;
+          text-align: center;
+          i{
+            margin-left: 8px;
+          }
+        }
+        .link-tit{
+          flex:3;
+          font-weight: 300;
+          color: $grey-33;
+          @include eillipse();
+        }
+        .link-date{
+          width: 186px;
+          text-align: center;
+          font-size: 14px;
+          color: $grey-66;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

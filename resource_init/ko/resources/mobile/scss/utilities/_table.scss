@@ -1,0 +1,17 @@
+//************************************
+//# table
+//************************************
+.table{
+  th{
+    padding: 0 0 0 $l-margin-10;
+    text-align: left;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  td{
+    padding: 6px $l-margin-10 6px 0;;
+    font-weight: 300;
+    font-size: 0.9375rem;
+    line-height: 16px;
+  }
+}

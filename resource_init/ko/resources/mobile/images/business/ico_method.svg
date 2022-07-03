@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="29.809" viewBox="0 0 30 29.809">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#fff;stroke:#333;stroke-width:2px}.prefix__cls-4{fill:none}.prefix__cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="prefix__ic_method" transform="translate(0 1.399)">
+        <g id="prefix__사각형_543" class="prefix__cls-1" data-name="사각형 543">
+            <path d="M0 0H6V10H0z" class="prefix__cls-3" transform="translate(0 18.41)"/>
+            <path d="M1 1H5V9H1z" class="prefix__cls-4" transform="translate(0 18.41)"/>
+        </g>
+        <g id="prefix__사각형_544" class="prefix__cls-1" data-name="사각형 544">
+            <path d="M0 0H6V16H0z" class="prefix__cls-3" transform="translate(8 12.41)"/>
+            <path d="M1 1H5V15H1z" class="prefix__cls-4" transform="translate(8 12.41)"/>
+        </g>
+        <g id="prefix__사각형_665" class="prefix__cls-1" data-name="사각형 665">
+            <path d="M0 0H6V12H0z" class="prefix__cls-3" transform="translate(16 16.41)"/>
+            <path d="M1 1H5V11H1z" class="prefix__cls-4" transform="translate(16 16.41)"/>
+        </g>
+        <g id="prefix__사각형_545" class="prefix__cls-1" data-name="사각형 545">
+            <path d="M0 0H6V22H0z" class="prefix__cls-3" transform="translate(24 6.41)"/>
+            <path d="M1 1H5V21H1z" class="prefix__cls-4" transform="translate(24 6.41)"/>
+        </g>
+        <path id="prefix__패스_185" fill="none" stroke="#333" stroke-linecap="square" stroke-width="2px" d="M4484.914-679.719l7.736-9.267 7.992 6.314 7.958-10.738" data-name="패스 185" transform="translate(-4482 693.41)"/>
+    </g>
+</svg>

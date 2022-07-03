@@ -1,0 +1,50 @@
+/******************************************
+# Admin detail
+# DATE   : 2020.06.25 
+# AUTHOR : yujinkim
+# DEVICE : MOBILE
+******************************************/
+// reset
+@import "base/reset";
+@import "base/base";
+
+// variables, mixin
+@import "mixin";
+
+// utility
+@import "utilities/content-wrap";
+
+// DETAIL
+.detail{
+  &-header{
+    margin: 47px $l-margin-44 20px;
+    &-tit{
+      margin: 12px 0 22px;
+      line-height: 2.0625rem;
+      font-size: 1.625rem;
+      font-weight: 300;
+      word-break: keep-all;
+    }
+    .info-category,
+    .info-date{
+      font-size:0.9375rem;
+    }
+  }
+  &-content{
+    .youtube{
+      position: relative;
+      iframe{
+        width: 100vw;
+        height: pxTovw(202)
+        
+      }
+    }
+    &-editor{
+      margin: 32px $l-margin-44;
+      font-size: 1.0625rem;
+      line-height: 1.75rem;
+      font-weight: 300;
+      color: $grey-33;
+    }
+  }
+}

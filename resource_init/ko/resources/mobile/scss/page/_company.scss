@@ -1,0 +1,174 @@
+.company{
+  .tab-content > .content{
+    padding: 32px 0 0;
+  }
+  .table{
+    border-top: 1px solid $grey-f0; 
+    border-bottom: 1px solid $grey-f0; 
+    th{
+      font-size: 15px;
+    }
+    tr:first-of-type{
+      th,
+      td{
+        padding-top: 14px;
+      }
+    }
+    tr:last-of-type{
+      th,
+      td{
+        padding-bottom: 14px;
+      }
+    }
+  }
+  .introduce{
+    padding-left: $l-margin-34;
+    padding-right: $l-margin-34;
+    .introduce-tit:not(:first-child){
+      border-top: 1px solid $grey-f0;
+      padding-top: 26px;
+    }
+    .ico{
+      left: 15px;
+      width: 22px;
+      height: 32px;
+    }
+    .with-sub{
+      margin-bottom: 12px;
+    }
+    &-sub-tit{
+      font-size: 17px;
+      margin: 0 $l-margin-10 12px;
+    }
+    &-link{
+      margin: 20px 0 26px;
+      text-align: right;
+    }
+    &-sub{
+      &:last-child{
+        border-top: 1px solid $grey-f0;
+        margin-top: 26px;
+        padding-top: 26px;
+      }
+    }
+  }
+}
+
+// Color
+.color{
+  &-tit{
+    margin-bottom: 15px;
+    font-size: 17px;
+  }
+  &-name{
+    margin-bottom: 5px;
+    font-size: 14px;
+    letter-spacing: 0;
+    em{
+      font-weight: 300;
+    }
+  }
+  &+&{
+    margin-top: 26px;
+  }
+}
+
+// Identity color
+$identity: (
+  'daelim': $daelim,
+  'haus': $haus,
+  'avenue': $avenue
+);
+
+@each $name, $list in $identity{
+  .#{$name}{
+    @each $class, $color in $list{
+      .#{$class}:before{
+        background-color: $color;
+      }
+    }
+  }
+}
+
+%margin-10{
+  margin-left: $l-margin-10;
+  margin-right: $l-margin-10;
+}
+// Corporate Identity Custom
+.corp{
+  .popup-header{
+    position: fixed;
+    z-index: 1;
+  }
+  .popup-content{
+    margin-top: 66px;
+    padding-left: $l-margin-34;
+    padding-right: $l-margin-34;
+  }
+  .color{
+    @extend %margin-10;
+  }
+}
+
+// Usage
+.usage{
+  position: relative;
+  margin-top: 26px;
+  padding-top: 26px;
+  &:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: $l-margin-34 * -1;
+    right: $l-margin-34 * -1;
+    background-color: $grey-f0;
+    height:1px;
+  }
+  &-tit{
+    margin: 0 $l-margin-10 8px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .txt{
+    @extend %margin-10;
+  }
+  .usage-list{
+    dt{
+      margin: 26px $l-margin-10 12px;
+    }
+    &-item{
+      margin-bottom: 26px;
+    }
+    &:last-child{
+      position: relative;
+      border-top: 1px solid $grey-f0;
+      .usage-list-item:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-info{
+    margin-top: 8px;
+    li{
+      @extend %margin-10;
+      line-height: 22px;
+      font-size: 0.875rem;
+      color: $grey-33;
+      letter-spacing: 0;
+      em{
+        font-weight: 300;
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+.popup.brand{
+  .popup-header{
+    position: fixed;
+    z-index: 1;
+  }
+  .popup-content{
+    margin-top: 66px;
+  }
+}

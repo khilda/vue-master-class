@@ -1,0 +1,195 @@
+// MEDIA
+.media{
+  &-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    padding-top: 32px;
+  }
+  .tab-filter{
+    .tab-title input[type='radio']:checked+label{
+      color: $black;
+      font-weight: 400;
+    }
+  }
+  .card{
+    margin: 12px;
+  }
+  .btn-wrap{
+    width: 100%;
+    margin-top: 32px;
+  }
+  .filter{
+    @include wrap(false){
+      margin-top: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      .item{
+        input[type='radio']{
+          display: none;
+          width: 0;
+          height: 0;
+          border: 0 none;
+          font-size: 0;
+        }
+        label{
+          display: block;
+          padding: 12px 0;
+          font-size: 0.9375rem;
+          font-weight: 300;
+          cursor: pointer;
+        }
+      }
+    }
+    &-set{
+      display:flex;
+      .item{
+        width: 150px;
+        text-align: center;
+        input[type='radio']:checked+label{
+          border-color: transparent;
+          background-color: $black;
+          color: $white;
+        }
+        label{
+          background-color: $white;
+          border: solid $grey-ea;
+          border-width: 1px 1px 1px 0px;
+        }
+        &:first-child label{
+          border-width: 1px;
+        }
+      }
+    }
+    &-align{
+      display:flex;
+      .item{
+        input[type='radio']:checked+label{
+          color: $black;
+          font-weight: 600;
+        }
+        label{
+          color: $grey-66;
+          border-right: 1px solid $grey-f0;
+          padding: 0 16px;
+        }
+        &:last-child label{
+          border-right: 0 none;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+// DETAIL
+
+.detail{
+  width: 1200px;
+  margin: 0 auto;
+  &-header{
+    margin-bottom: 47px;
+    &-tit{
+      margin: 12px 0;
+      line-height: 52px;
+      font-size: 40px;
+      font-weight: 100;
+      word-break: keep-all;
+      color: $grey-33;
+    }
+    .info-category,
+    .info-date{
+      font-size:15px;
+    }
+  }
+  &-content{
+    .youtube{
+      position: relative;
+      iframe{
+        width: 100%;
+        height: 520px;
+      }
+    }
+    &-editor{
+      padding: 32px 0;
+      font-size: 17px;
+      line-height: 28px;
+      font-weight: 300;
+      color: $grey-33;
+      img{
+        max-width: 100%;
+        width: auto;
+      }
+    }
+  }
+  &-footer{
+    margin: 60px auto 0;
+    .btn.list{
+      margin-top: 60px;
+    }
+    .link-group{
+      margin: 18px 0;
+      border-top: 1px solid $grey-f0;
+      .btn-link{
+        display: flex;
+        border-bottom: 1px solid $grey-f0;
+        padding: 14px 0;
+        .btn-txt{
+          width: 165px;
+          color: $black;
+          text-align: center;
+          i{
+            margin-left: 8px;
+          }
+        }
+        .link-tit{
+          flex:3;
+          font-weight: 300;
+          color: $grey-33;
+          @include eillipse();
+        }
+        .link-date{
+          width: 186px;
+          text-align: center;
+          font-size: 14px;
+          color: $grey-66;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+.social{
+  margin-bottom: 44px;
+  text-align: right;
+  font-size: 0;
+  &-link{
+    display: inline-block;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    text-align: center;
+    font-size: 0;
+    color: transparent;
+    vertical-align: middle;
+    &[data-share="kakao"]{
+      background-image: url('../images/common/bg_share_kakao.png');
+    }
+    &[data-share="kakaoStory"]{
+      background-image: url('../images/common/bg_share_kakaostory.png');
+    }
+    &[data-share="blog"]{
+      background-image: url('../images/common/bg_share_blog.png');
+    }
+    &[data-share="facebook"]{
+      background-image: url('../images/common/bg_share_facebook.png');
+    }
+    &[data-share="url"]{
+      background-image: url('../images/common/bg_share_url.png');
+    }
+  }
+}

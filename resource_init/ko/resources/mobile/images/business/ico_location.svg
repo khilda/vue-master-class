@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__ic_location" width="29" height="29.488" viewBox="0 0 29 29.488">
+    <defs>
+        <style>
+            .prefix__cls-4,.prefix__cls-5{stroke:none}.prefix__cls-5{fill:#333}
+        </style>
+    </defs>
+    <g id="prefix__패스_178" fill="none" data-name="패스 178">
+        <path d="M3 0h23l3 10H0z" class="prefix__cls-4" transform="translate(0 19.488)"/>
+        <path d="M4.488 2l-1.8 6h23.624l-1.8-6H4.488M3 0h23l3 10H0L3 0z" class="prefix__cls-5" transform="translate(0 19.488)"/>
+    </g>
+    <g id="prefix__패스_179" fill="#fff" data-name="패스 179">
+        <path d="M9.404 23.179c-1.994-1.675-7.993-7.15-8.34-12.678-.191-3.028.584-5.562 2.243-7.328C4.822 1.56 6.999.671 9.437.671c2.457 0 4.898 1.106 6.53 2.957.772.877 1.338 1.882 1.683 2.987.372 1.195.475 2.482.305 3.823-.312 2.46-1.983 5.53-4.833 8.876-1.482 1.741-2.927 3.136-3.718 3.865z" class="prefix__cls-4" transform="translate(4.965 .329)"/>
+        <path d="M9.437 1.67c-2.159 0-4.077.778-5.401 2.188-1.465 1.56-2.148 3.835-1.975 6.58.155 2.46 1.645 5.362 4.31 8.394 1.099 1.249 2.195 2.287 3.003 3.002.792-.763 1.877-1.865 2.987-3.168 2.723-3.198 4.315-6.086 4.602-8.354.37-2.92-.746-4.886-1.747-6.022-1.445-1.64-3.605-2.62-5.779-2.62m0-2c5.214 0 10.333 4.403 9.51 10.894-.823 6.491-9.51 13.93-9.51 13.93S.515 17.712.065 10.563C-.385 3.414 4.223-.33 9.437-.33z" class="prefix__cls-5" transform="translate(4.965 .329)"/>
+    </g>
+    <g id="prefix__타원_114" fill="none" stroke="#333" stroke-width="2px" data-name="타원 114" transform="translate(11 6.488)">
+        <circle cx="3.5" cy="3.5" r="3.5" class="prefix__cls-4"/>
+        <circle cx="3.5" cy="3.5" r="2.5"/>
+    </g>
+</svg>

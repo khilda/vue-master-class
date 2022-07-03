@@ -1,0 +1,268 @@
+//************************************
+//# popup
+//************************************
+.popup{
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: $white;
+  z-index: 5000;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  &.is-show{
+    display: block;
+  }
+  &-header{ 
+    border-bottom:1px solid $grey-f0;
+    background-color: $white;
+    width: 100%;
+    height: 66px;
+    padding: 20px 0;
+    text-align: center;
+    .tit{
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+    &.is-fixed{
+      position: fixed;
+      &+.popup-content{
+        margin-top: 66px;
+      }
+    }
+  }
+  .pop-close{
+    @include iconCancel($size: 20px, $thick: 2px, $padding: 0, $position: absolute); 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 66px;
+    height: 66px;
+    z-index: 5;
+  }
+  &-content{
+    padding: 30px $l-margin-44; 
+  }
+}
+
+// DIM
+.dim{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: rgba(0,0,0,.8);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 500;
+}
+
+//************************************
+//# custom popup - 개인정보처리방침
+//************************************
+.privacy{
+  display: block;
+  .popup-header{
+    height: auto;
+    padding: 58px $l-margin-44 26px;
+    text-align: left;
+    .tit{
+      font-size: 1.625rem;
+      font-weight: 400;
+    }
+  }
+  &-block{
+    margin-bottom: 26px;
+    color: $grey-33;
+    &:last-child{
+      margin:0;
+    }
+    .txt{
+      margin:6px 0;
+    }
+  }
+  &-tit{
+    font-size: 1.0625rem;
+    margin-bottom: 8px;
+  }
+  &-sub-tit{
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+}
+
+//************************************
+//# custom popup - 이미지 팝업
+//************************************
+.p-gallery{
+  background: transparent;
+  .popup-header{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,.1);
+    border-color: transparent;
+    width: 100vw;
+    z-index: 5;
+    .tit{
+      font-size: 0;
+      color: transparent;
+    }
+    .pop-close{
+      transition: .3s opacity;
+      transform: translate3d(0,0,0);
+      &-hidden{
+        opacity: 0;
+      }
+    }
+  }
+  &-content{ //gallery-content
+    display:flex;
+    width: 100vw;
+    height:100%;
+  }
+  &-swiper{
+    .swiper-slide{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+  }
+  // style
+  .pop-close{
+    &:before,
+    &:after{
+      background: $white;
+    }
+  }
+}
+//************************************
+//# custom popup - 슬라이드 팝업
+//************************************
+.draw{
+  display: block;
+  position: fixed;
+  top: auto;
+  right: 0;
+  bottom:-100vh;
+  background: $white;
+  transition: bottom .3s ease-in-out;
+  z-index: -999;
+  &.is-show{
+    bottom: 0;  
+    z-index: 500;
+  }
+  .popup{
+    &-content{
+      padding: 32px $l-margin-34 52px;
+    }
+    &-footer{
+      width: 100%;
+      height: 54px;
+      .btn{
+        border: 0 none;
+        background-color: $black;
+        padding: 15px 0;
+        color: $white;
+        &+.btn{
+          border-left: 1px solid rgba($white,.1)
+        }
+      }
+    }
+  }
+}
+
+//************************************
+//# Filter setting
+//************************************
+.filter{
+  padding-bottom: 54px;
+  .popup-footer{
+    position: fixed;
+    bottom: 0;
+  }
+  &-tit{
+    margin: 0 $l-margin-10 8px;
+    font-size: 0.9375rem;
+    font-weight: 400;
+  }
+  &-set{
+    display: flex;
+    border: 0px solid $grey-ea;
+    border-width: 1px 0 0 1px;
+    flex-wrap: wrap;
+    .item{
+      width: 50%;
+      text-align: center;
+      input[type='radio']{
+        display: none;
+        width: 0;
+        height: 0;
+        border: 0 none;
+        font-size: 0;
+        &:checked+label{
+          border-color: transparent;
+          background-color: $black;
+          color: $white;
+        }
+      }
+      label{
+        display: block;
+        background-color: $white;
+        border-right: 1px solid $grey-ea;
+        border-bottom: 1px solid $grey-ea;
+        padding: 12px 0;
+        font-size: 0.9375rem;
+      }
+    }
+    &+.filter-tit{
+      margin-top: 20px;
+    }
+  }
+}
+
+//************************************
+//# Share
+//************************************
+.share{
+  .popup-content{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: space-between;
+    height: 273px;
+  }
+  &-link{
+    display: inline-block;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 55px 55px;
+    width: pxTovw(81);
+    padding-top: 60px;
+    margin-right: pxTovw(32);
+    text-align: center;
+    font-size: 0.875rem;
+    color: $grey-66;
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+    &[data-share="kakao"]{
+      background-image: url('../images/common/bg_share_kakao.png');
+    }
+    &[data-share="kakaoStory"]{
+      background-image: url('../images/common/bg_share_kakaostory.png');
+    }
+    &[data-share="blog"]{
+      background-image: url('../images/common/bg_share_blog.png');
+    }
+    &[data-share="facebook"]{
+      background-image: url('../images/common/bg_share_facebook.png');
+    }
+    &[data-share="url"]{
+      background-image: url('../images/common/bg_share_url.png');
+    }
+  }
+}

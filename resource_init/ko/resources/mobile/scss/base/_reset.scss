@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* ----------------------------------------------------------
+	# Font face
+---------------------------------------------------------- */
+@mixin fontFace($name, $file, $weight: normal, $style: normal){
+  @font-face {
+    font-family: "#{$name}";
+    src: url('../fonts/#{$file}.eot');
+    src: url('../fonts/#{$file}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/#{$file}.woff') format('woff'),
+         url('../fonts/#{$file}.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+@include fontFace("NotoSansKR", "NotoSans-Thin", 100);
+@include fontFace("NotoSansKR", "NotoSans-Light", 300);
+@include fontFace("NotoSansKR", "NotoSans-Regular", 400);
+@include fontFace("NotoSansKR", "NotoSans-Medium", 600);
+@include fontFace("NotoSansKR", "NotoSans-Bold", 800);
+// @include fontFace("NotoSansKR", "NotoSans-Black", 900);
+
+/* ----------------------------------------------------------
+	# publish guide 2019
+  # 초기화 
+  # 수정금지
+---------------------------------------------------------- */
+/*Default set*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-text-size-adjust: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: 'Noto Sans CJK KR', 'NotoSansKR', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; 
+}
+
+button, select, input, textarea {
+  font-family: 'Noto Sans CJK KR', 'NotoSansKR', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
+
+/* HTML5 display-role reset for older browsers */
+main, article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* body {
+  overflow-x: hidden;
+} */
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+}
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+code, pre {
+  font-size: 1em; }
+
+address, em, cite {
+  font-style: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0; }
+
+a, a:hover, a:active {
+  text-decoration: none; 
+  outline: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer; 
+}
+
+a:disabled,
+button:disabled {
+  cursor: default; }
+
+hr {
+  display: none; }

@@ -1,0 +1,123 @@
+.intro{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width: 100vw;
+  height: 100vh;
+  &-swiper{
+    .swiper-slide{
+      position: relative;
+    }
+    .swiper-pagination{
+      top: calc(50% - 150px);
+      left: pxTovw(54);
+      bottom: auto;
+      text-align: left;
+      .swiper-pagination-bullet{
+        background: $white;
+      }
+      .swiper-pagination-bullet-active{
+        background: $white;
+        width: 7px;
+        height: 7px;
+      }
+    }
+  }
+  &-bg{
+    position: relative;
+    width: 100vw;
+    height:100vh;
+    &:after{
+      content:'';
+      position: absolute;
+      top:0;
+      left:0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, 0.45);
+    }
+  }
+  &-content{
+    position: absolute;
+    top: 50%;
+    left: pxTovw(54);
+    transform:translateY(-50%);
+  }
+}
+
+.link-skip{
+  position: fixed;
+  top: 16px;
+  right: 24px;
+  background-color: rgba($white, .2);
+  border-radius: 60px;
+  padding: 7px 19px;
+  color: $white;
+  font-size: 14px;
+  z-index: 5;
+}
+.intro-content{
+  .intro-tit{
+    line-height: 39px;
+    font-size: 32px;
+    font-weight: 300;
+    color: $white;
+  }
+  .txt{
+    margin: 7px 0 34px;
+    font-weight: 100;
+    color: $white;
+  }
+  .btn-more{
+    color: $white;
+    letter-spacing: $letter-spacing-48;
+    .ico-arr-right{
+      background-color: $white;
+      color: $black;
+      &:before{
+        border-color: $black;
+      }
+    }
+  }
+}
+
+// animation img size
+.animation{
+  &-slide-up{
+    position: absolute;
+    top: 0;
+  }
+  &-slide-down{
+    position: absolute;
+    bottom: 0;
+  }
+  &-slide-left,
+  &-slide-right{
+    width: auto;
+    height: 100vh;
+  }
+}
+.swiper-slide-prev,
+.swiper-slide-active{
+  .animation-slide-up{
+    @include animation(0, 15s, animation-slide-up, linear);
+  }
+  .animation-slide-down{
+    @include animation(0, 15s, animation-slide-down, linear);
+  }
+  .animation-slide-left{
+    @include animation(0, 15s, animation-slide-left, linear);
+  }
+  .animation-slide-right{
+    @include animation(0, 15s, animation-slide-right, linear);
+  }
+  .animation-zoom-in{
+    @include animation(0, 15s, animation-zoom-in, linear);
+  }
+  .animation-zoom-out{
+    @include animation(0, 15s, animation-zoom-out, linear);
+  }
+}

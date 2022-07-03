@@ -1,0 +1,92 @@
+//************************************
+//# swiper
+//************************************
+.swiper{
+  &-pagination{
+    &-bullet{
+      width: 6px;
+      height: 6px;
+      margin-right: 8px;
+      vertical-align: top;
+      &-active{
+        background: $black;
+      }
+    }
+    &-fraction{
+      position: fixed;
+      top: 30px;
+      bottom: auto;
+      color: $white;
+      font-size: 14px;
+      font-weight: 300;
+      span{
+        margin:0 3px;
+      }
+    }
+  }
+  &-button{
+    position: absolute;
+    left: calc(50% - 620px);
+    width: 1240px;
+    transition: opacity 300s;
+    opacity: 1;
+    z-index: 1;
+    &.is-hide{
+      opacity: 0;
+      .swiper-button-next,
+      .swiper-button-prev{
+        opacity: 0;
+      }
+    }
+    &>&-next,
+    &>&-prev{
+      top: auto;
+    }
+    &>&-next{
+      right: 0;
+    }
+    &>&-prev{
+      left: 0;
+    }
+    &-next,
+    &-prev{
+      background-color: $white;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      margin:0;
+      text-align: center;
+      transition: opacity .3s;
+      box-shadow: 0 3px 6px rgba($black, .16);
+      opacity: 1;
+      &:after{
+        border: 2px solid $black;
+        border-width: 2px 2px 0 0;
+        width: 8px;
+        height: 8px;
+        font-size: 0;
+      }
+    }
+    &-next{
+      &:after{
+        transform: rotate(45deg);
+        transform-origin: 4px 3px;
+      }
+      &.swiper-button-disabled{
+        opacity: 0;
+      }
+    }
+    &-prev{
+      &:after{
+        transform: rotate(-135deg);
+        transform-origin: 6px 5px;
+      }
+      &.swiper-button-disabled{
+        opacity: 0;
+      }
+    }
+    &-hidden{
+      opacity: 0;
+    }
+  }
+}

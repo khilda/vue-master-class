@@ -1,0 +1,200 @@
+//************************************
+//# Form
+//************************************
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+  border: 1px solid $grey-ea;
+  background-color: $white;
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  font-weight: 300;
+  box-sizing: border-box;
+  vertical-align: middle;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &::placeholder{
+    color: $grey-cc;
+    font-weight: 300;
+  }
+  &:focus{
+    border-color: $black;
+  }
+}
+input[type="text"],
+select{
+  height: 44px;
+}
+select{
+  background-image: url('../images/common/bg_slct_arr.svg');
+  background-position: top 50% right 10px;
+  background-size: 8px 5px;
+  background-repeat: no-repeat;
+  &::-ms-expand {
+    display: none;
+  }
+}
+textarea{
+  min-height: 160px;
+  resize: vertical;
+}
+.form{
+  // layout
+  &-group{
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 215px;
+    &.is-error{
+      input,
+      select,
+      textarea,
+      .dropdown{
+        border-color: $black;
+      }
+      .form-group-txt{
+        display: block;
+      }
+    }
+    input,
+    textarea,
+    select{
+      margin-bottom: 6px;
+    }
+    &-tit{
+      position: absolute;
+      top: 10px;
+      left: 0;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.9375rem;
+      font-weight: 400;
+    }
+    &-txt{
+      display: none;
+      font-size: 0.8125rem;
+      font-weight: 300;
+      color: $color-accent;
+    }
+  }
+  //# Form inline Group : ex) email
+  &-inline{
+    display: flex;
+    input[type="text"],
+    input[type="email"],
+    .dropdown,
+    select{
+      flex: 1;
+      margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    em{
+      margin-top: 11px;
+      margin-right: 10px;
+    }
+  }
+  //# chk Group
+  &-chk{
+    position: relative;
+    input[type="checkbox"]{
+      display: none;
+      width: 0;
+      height: 0;
+      border: 0 none;
+      font-size: 0;
+      +label{
+        cursor: pointer;
+        &:before{
+          content:'';
+          display: inline-block;
+          border: 1px solid $grey-f0;
+          background: $white;
+          width: 20px;
+          height: 20px;
+          margin: 0 5px 2px 0;
+          vertical-align: middle;
+        }
+        .chk{
+          position: absolute;
+          left: 7px;
+          top: calc(50% - 9px);
+          background: transparent;
+          width: 7px;
+          height: 12px;
+          box-shadow: 2px 2px 0 $white;
+          transform: rotate(45deg);
+        }
+      }
+      &:checked+label:before{
+        background: $black
+      }
+    }
+  }
+  //# file Group
+  &-file{
+    position: relative;
+    display: flex;
+    input[type="file"]{
+      position: absolute;
+      top:0;
+      left:0;
+      width: 0;
+      height: 0;
+      border: 0 none;
+      font-size: 0;
+    }
+    input[type="text"]{
+      flex:1;
+    }
+    .btn{
+      border-color: $grey-52;
+      background-color: $grey-52;
+      height: 44px;
+      padding: 12px 16px;
+      color: $white;
+      font-weight: 400;
+      font-size: 0.9375rem;
+      cursor: pointer;
+      &:active{
+        background-color: $white;
+        color: $black;
+      }
+    }
+    &+.file-txt{
+      position: relative;
+      display:inline-block;
+      margin-top: 8px;
+      padding-left: 15px;
+      font-size: 0.875rem;
+      font-weight: 300;
+      &:before{
+        content: '※';
+        display:inline-block;
+        position: absolute;
+        left:0;
+      }
+    }
+  }
+}
+
+// select box with text field
+.slct-txt{
+  flex:2.2;
+  display: flex;
+  position: relative;
+  .dropdown{
+    flex:1;
+  }
+  input{
+    flex:1;
+    width: 320px;
+    margin-right: 10px;
+
+  }
+}
