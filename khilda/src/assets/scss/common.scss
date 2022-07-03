@@ -1,0 +1,20 @@
+/******************************************
+# Common Layout & Utilties
+# DATE   : 2020.06.25 
+# AUTHOR : yujinkim
+# DEVICE : WEB
+******************************************/
+// reset
+@import "base/reset";
+@import "base/base";
+
+// variables, mixin
+@import "mixin";
+
+// layout
+@import "layout/header";
+@import "layout/container";
+@import "layout/footer";
+
+// utility
+@import "utilities";

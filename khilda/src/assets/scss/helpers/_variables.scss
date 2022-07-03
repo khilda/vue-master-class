@@ -1,0 +1,72 @@
+/////////////////////////////////////////////
+// color
+/////////////////////////////////////////////
+$white: #ffffff;
+$black: #000000;
+$transparent : transparent;
+
+$color-primary: #B6BCC8;
+$color-primary-light: #f0f6ff;
+$color-primary-grey: #e9ecef;
+
+$color-accent: #ff2600;
+
+$grey-f2: #f2f2f2;
+$grey-f0: #f0f0f0;
+$grey-dd: #dddddd;
+$grey-ea: #eaeaea;
+$grey-cc: #cccccc;
+$grey-b1: #b1b1b1;
+$grey-99: #999999;
+$grey-88: #888888;
+$grey-6f: #6f6f6f;
+$grey-66: #666666;
+$grey-52: #525252;
+$grey-33: #333333;
+
+/////////////////////////////////////////////
+// Root Color
+/////////////////////////////////////////////
+:root {
+  --swiper-theme-color: $black;
+}
+
+/////////////////////////////////////////////
+// Component Size
+/////////////////////////////////////////////
+$l-width: 81.86666vw;  // 307px (375px 기준)
+$l-margin-10: 2.6667vw;   // 10px (375px 기준)
+$l-margin-34: 9.0666vw;   // 34px (375px 기준)
+$l-margin-44: 11.7333vw;   // 44px (375px 기준)
+
+// letter-spacing
+$letter-spacing-48 : -0.03rem; // 0.48px 
+
+
+/////////////////////////////////////////////
+// Identity Color
+/////////////////////////////////////////////
+$daelim: (
+  'primary-01' : #041c2c,
+  'primary-02' : #efdc00,
+  'secondary-01' : #d9d9d6,
+  'secondary-02' : #d0d0ce,
+  'secondary-03' : #54585a
+);
+
+$haus: (
+  'primary-01' : #410046,
+  'primary-02' : #4b4b4b,
+  'primary-03' : #fff0c8,
+  'secondary-01' : #af7dbe,
+  'secondary-02' : #999999,
+  'secondary-03' : #d9d9d9
+);
+
+$avenue: (
+  'primary-01' : #e94e31,
+  'primary-02' : #4b4b4b,
+  'secondary-01' : #d7d2cb,
+  'secondary-02' : #cbc6bc,
+  'secondary-03' : #f6f2ee
+);

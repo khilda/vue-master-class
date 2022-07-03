@@ -1,0 +1,57 @@
+.dropdown{
+  position: relative;
+  border: 1px solid $grey-ea;
+  display: flex;
+  flex-direction: column;
+  height: 48px;
+  &:hover{
+    border-color: $black;
+  }
+  &-btn{
+    background-color: $white;
+    padding: 11px 20px 11px 12px;
+    text-align: left;
+    font-weight: 300;
+    .ico-triangle-bottom{
+      position: absolute;
+      top: calc(50% - 2px);
+      right: 20px;
+      &:before{
+        transition: .3s;
+      }
+    }
+    &[value="none"]{
+      color: $grey-cc;
+    }
+  }
+  &-list{
+    display: none;
+    position: absolute;
+    top: 46px;
+    left: -1px;
+    right: -1px;
+    background: #fff;
+    border: 1px solid;
+    max-height: 215px;
+    padding: 5px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+    overflow-y: auto;
+    z-index: 1;
+    .item{
+      display: block;
+      width: 100%;
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 300;
+      &:hover{
+        background: $color-primary-light;
+      }
+    }
+  }
+  &.is-active{
+    border-color: $black;
+    .ico-triangle-bottom:before{
+      transform: rotate(180deg);
+    }
+  }
+}

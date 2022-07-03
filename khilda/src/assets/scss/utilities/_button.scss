@@ -1,0 +1,94 @@
+//************************************
+//# button
+//************************************
+%btn{
+  position: relative;
+  display: block;
+  width: 196px;
+  margin: 0 auto;
+  padding: 12px 12px;
+  font-size: 1rem;
+  text-align: center;
+}
+.btn{
+  @extend %btn;
+  background-color: $white;
+  border: 1px solid $grey-ea;
+  font-weight: 600;
+  &:active{
+    background-color: $black;
+    color: $white;
+  }
+  &-block{
+    @extend %btn;
+    display: block;
+    width: 100%;
+    font-weight: 600;
+  }
+  &-filter{
+    font-weight: 400;
+  }
+}
+//************************************
+//# Custom button - 더 알아보기
+//************************************
+.btn-more{
+  @extend %btn;
+  display: inline-block;
+  border-color: transparent;
+  width: auto;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
+  color: $black;
+  .ico-arr-right{
+    background: $black;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    margin-left: 8px;
+    margin-bottom: 4px;
+    &:before{
+      border-color: $white;
+    }
+  }
+}
+//************************************
+//# Close button
+//************************************
+.btn-close{
+  @extend %btn;
+  @include iconCancel($size: 13px, $thick: 1px); 
+  padding: 12px;
+  font-size: 0;
+  color: transparent;
+}
+
+//************************************
+//# button Group
+//************************************
+.btn-group{
+  display: flex;
+  font-size: 0;
+  .btn{
+    flex:1;
+    &+.btn{
+      border-left-width: 0;
+    }
+  }
+}
+
+//************************************
+//# button View more
+//************************************
+.btn-list-more{
+  @extend %btn;
+  display: block;
+  width: 196px;
+  margin: 0 auto;
+  background-color: #f5f6f6;
+  font-weight: 600;
+  .ico-arr-bottom{
+    margin-left: 5px;
+  }
+}
