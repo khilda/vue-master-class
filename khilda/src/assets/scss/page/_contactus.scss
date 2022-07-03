@@ -1,0 +1,67 @@
+.contactus{
+  .form{
+    @include wrap(false){
+      &>.btn{
+        background-color: $black;
+        color: $white;
+        padding: 15px 0;
+        &:active{
+          background-color: $white;
+          color: $black;
+        }
+        &:disabled{
+          background: $grey-dd;
+          color: $white;
+        }
+      }
+    }
+    
+  }
+}
+
+// 개인정보수집이용 아코디언
+.chk-privacy{
+  border-top: 1px solid $grey-f0;
+  border-bottom: 1px solid $grey-f0;
+  margin: 36px 0 44px;
+  &-tit{
+    position: relative;
+    padding: 20px 0;
+    cursor: pointer;
+    &:after{
+      content:'';
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      display: block;
+      border-top: 5px solid $black;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      transition: transform .3s;
+    }
+  }
+  &-content{
+    display: none;
+    border-top: 1px solid $grey-f0;
+    background-color: #f9faf9;
+    padding: 16px 20px;
+    color: $grey-66;
+    word-break: keep-all;
+    .privacy-list{
+      margin-bottom: 12px;
+      dt{
+        font-size: 14px;
+      }
+      dd{
+        font-size: 13px;
+        font-weight: 300;
+        color: $grey-66;
+      }
+    }
+  }
+  &.is-open{
+    .chk-privacy-tit:after{
+      transform: rotate(180deg);
+    }
+  }
+}

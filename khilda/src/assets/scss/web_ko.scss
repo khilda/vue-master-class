@@ -1,0 +1,19 @@
+/******************************************
+#  WEB PAGE STYLE - KOR
+#  DATE   : 2020.07.10 
+#  AUTHOR : yujinkim
+#  DEVICE : WEB KOR
+******************************************/
+// common layout, utilities, lib
+@import url("lib/swiper.min.css");
+@import url("common.css");
+// variables, mixin
+@import "mixin";
+// page style
+@import "page/main";
+@import "page/privacy";
+@import "page/company";
+@import "page/business";
+@import "page/brand";
+@import "page/media";
+@import "page/contactus"; 

@@ -1,0 +1,124 @@
+.company{
+  .tab-title .item{
+    width: 120px;
+  }
+}
+
+.introduce{
+  display: block;
+  width: 100%;
+  &-tit{
+    margin-bottom:18px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  &-sub-tit{
+    margin-bottom:18px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+.introduce+.introduce{
+  border-top: 1px solid $grey-f0;
+  padding-top: 48px;
+}
+.article{
+  @include clearfix();
+  display: flex;
+  margin-bottom: 48px;
+  &-img{
+    width: 384px;
+    height: 215px;
+    margin-right: 48px;
+    overflow: hidden;
+  }
+  &-content{
+    flex:1;
+  }
+  &-tit{
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  &-txt{
+    font-size: 18px;
+    font-weight: 300;
+    color: $grey-33;
+  }
+  &-group{
+    border-top: 1px solid $grey-f0;
+    margin-top: 32px;
+  }
+}
+// Color
+.color{
+  margin-top: 32px;
+  &-tit{
+    margin-bottom: 15px;
+    font-size: 17px;
+  }
+  &-name{
+    margin-bottom: 5px;
+    font-size: 14px;
+    letter-spacing: 0;
+    em{
+      font-weight: 300;
+    }
+  }
+}
+
+// Identity color
+$identity: (
+  'daelim': $daelim,
+  'haus': $haus,
+  'avenue': $avenue
+);
+
+@each $name, $list in $identity{
+  .#{$name}{
+    @each $class, $color in $list{
+      .#{$class}:before{
+        background-color: $color;
+      }
+    }
+  }
+}
+
+// Usage
+.usage{
+  position: relative;
+  margin-top: 32px;
+  &-tit{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .usage-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    dt{
+      width: 100%;
+      margin: 32px 0 16px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    &-item{
+      display: inline-block;
+      width: 244px;
+    }
+
+  }
+  &-info{
+    margin-top: 8px;
+    li{
+      line-height: 22px;
+      font-size: 14px;
+      color: $grey-33;
+      letter-spacing: 0;
+      em{
+        font-weight: 300;
+        font-size: 1em;
+      }
+    }
+  }
+}

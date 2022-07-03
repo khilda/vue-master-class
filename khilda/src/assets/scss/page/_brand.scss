@@ -1,0 +1,102 @@
+.lucid{
+  .visual{
+    height: 756px;
+    &-info{
+      @include wrap(false){
+        margin-bottom: 48px;
+      }
+    }
+    &-category{
+      font-size: 15px;
+      font-weight: 400;
+    }
+    &-tit{
+      margin: 6px 0 26px;
+      line-height: 52px;
+      font-size: 40px;
+      font-weight: 300;
+    }
+  }
+  .tab-title .item{
+    width: 88px;
+  }
+  .tab-content .content{
+    margin: 0 -12px;
+  }
+  .card{
+    margin: 0 12px 24px;
+  }
+  &-tit{
+    margin-bottom: 24px;
+    font-size: 34px;
+    font-weight: 300;
+  }
+}
+.gallery{
+  position: relative;
+  margin-bottom: 88px;
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -48px;
+    background-color: $color-primary-light;
+    display: block;
+    height:190px;
+  }
+  @include wrap(){}
+  &-swiper{
+    .swiper-slide{
+      position: relative;
+      width: 190px;
+      height: 190px;
+      overflow: hidden;
+      img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 150%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .swiper-button{
+    bottom: 110px;
+  }
+}
+.info{
+  @include wrap(false){}
+  &-wrap{
+    display: flex;
+  }
+  &-img{
+    display: block;
+    width: 761px;
+    height: 375px;
+    margin-right:48px;
+  }
+  &-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 390px;
+  }
+  &-table{
+    margin: 25px 0 33px;
+  }
+  .brand{
+    &-info{
+      border-bottom: 1px solid $grey-f0;
+      padding: 0 0 24px;
+    }
+    &-category{
+      font-weight: 600;
+      font-size: 15px;
+    }
+    &-tit{
+      font-weight: 400;
+      font-size: 32px;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+//************************************
+//# tab
+//************************************
+.tab{
+  position: relative;
+  &-header{
+    border-bottom: 1px solid $grey-f0;
+  }
+  &-title{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+    .item{
+      position: relative;
+      display: inline-block;
+      min-width: 88px;
+      padding: 30px 0 22px;
+      margin: 0 18px 0 0 ;
+      color: $grey-66;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 300;
+      box-sizing: border-box;
+      &.is-active{
+        color: $black;
+        font-weight: 400;
+        &:after{
+          background-color: $black;
+        }
+      }
+    }
+    
+  }
+  &-indicator{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    display: block;
+    background-color: $black;
+    height: 2px;
+    transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.17, 0.8, 0.33, 0.99), width 0.5s linear;
+  }
+  &-content{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    .content{
+      display: none;
+      flex-wrap: wrap;
+      padding: 44px 0;
+      &.is-active{
+        display: flex;
+      }
+    }
+  }
+}
+// tab-filter
+.tab-filter{
+  .tab-title{
+    input[type="radio"]{
+      display: none;
+      width: 0;
+      height: 0;
+      border: 0 none;
+      font-size: 0;
+    }
+  }
+}

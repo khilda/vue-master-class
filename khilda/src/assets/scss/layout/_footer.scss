@@ -1,0 +1,42 @@
+.footer{
+  background: $color-primary-grey;
+  padding: 38px 0;
+  margin-top: 160px;
+  @include wrap(){
+    position: relative;
+    padding-left: 240px;
+  };
+  .logo{
+    position: absolute;
+    left: 0;
+    width: 130px;
+    padding: 3px 0;
+  }
+  .item{
+    display: inline-block;
+    font-size: 14px;
+    color: $color-primary;
+    +.item:before{
+      content: '';
+      display: inline-block;
+      background: $color-primary;
+      width: 1px;
+      height: 13px;
+      margin: 0 25px;
+    }
+  }
+  .sitemap{
+    font-size: 0;
+  }
+  address{
+    display: flex;
+    margin: 11px 0 4px;
+    .item+.item:before{
+      margin: 0 15px;
+    }
+  }
+  .copyright{
+    font-size: 13px;
+    color: $color-primary;
+  }
+}

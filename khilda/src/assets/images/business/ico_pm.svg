@@ -1,0 +1,10 @@
+<svg id="ic_pm" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <rect id="Guide" width="40" height="40" fill="none" opacity="0.3"/>
+  <g id="사각형_666" data-name="사각형 666" transform="translate(4)" fill="none" stroke="#000" stroke-width="2">
+    <rect width="32" height="40" stroke="none"/>
+    <rect x="1" y="1" width="30" height="38" fill="none"/>
+  </g>
+  <rect id="사각형_667" data-name="사각형 667" width="15" height="2" transform="translate(12 8)"/>
+  <rect id="사각형_668" data-name="사각형 668" width="8" height="2" transform="translate(12 13)"/>
+  <path id="패스_180" data-name="패스 180" d="M-4525.281,7607.375l9.251-8.092,4.895,4.186,8.082-7.278" transform="translate(4530.234 -7573.389)" fill="none" stroke="#000" stroke-width="2"/>
+</svg>

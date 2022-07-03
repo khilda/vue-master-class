@@ -1,0 +1,53 @@
+//************************************
+//# KEY FRAME
+//************************************
+// -- Slide Animations -- //
+@include keyframe(animation-slide-up) {
+  0% {
+      transform: translate(0,0);
+  }
+  100% {
+      transform: translate(0,-10%);
+  }
+}
+@include keyframe(animation-slide-down) {
+  0% {
+      transform: translate(0,0);
+  }
+  100% {
+      transform: translate(0,10%);
+  }
+}
+@include keyframe(animation-slide-left) {
+  0% {
+      transform: translate(0,0);
+  }
+  100% {
+      transform: translate(10%,0);
+  }
+}
+@include keyframe(animation-slide-right) {
+  0% {
+      transform: translate(0,0);
+  }
+  100% {
+      transform: translate(-10%,0);
+  }
+}
+// -- Zoom Animations -- //
+@include keyframe(animation-zoom-in) {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.2);
+  }
+}
+@include keyframe(animation-zoom-out) {
+  0% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
