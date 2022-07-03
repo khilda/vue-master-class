@@ -3,7 +3,7 @@
     <div class="footer-wrap">
       <h1 class="logo">
         <img
-          src="../../../resources/web/images/common/img_footer_logo.svg"
+          src="@/static/images/common/img_footer_logo.svg"
           alt="대림D&I"
         />
       </h1>

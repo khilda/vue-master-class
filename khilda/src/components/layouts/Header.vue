@@ -4,7 +4,7 @@
       <h1 class="logo">
         <a href="../common/index.html"
           ><img
-            src="../../../resources/web/images/common/img_logo.svg"
+            src="@/static/images/common/img_logo.svg"
             alt="대림D&I"
         /></a>
       </h1>
